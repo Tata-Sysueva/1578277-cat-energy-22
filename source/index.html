@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
@@ -10,92 +10,87 @@
         <img src="img/logo-img-mobile.svg" width="34" height="38" alt="Логотип магазина Cat Energy" class="page-header__logo-image">
         <img src="img/logo-text-mobile.svg" width="101" height="18" alt="Магазин Cat Energy" class="page-header__title-image">
       </a>
-      <nav class="page-header__menu hamburger-menu">
-        <label class="hamburger-menu__btn" for="menu__toggle">
-          <input id="menu__toggle" type="checkbox" class="hamburger-menu__toggle"/>
-        </label>
-        <span></span>
-        <ul class="hamburger-menu__list">
-            <li><a class="hamburger-menu__item" href="#">Главная</a></li>
-            <li><a class="hamburger-menu__item" href="#">Каталог</a></li>
-            <li><a class="hamburger-menu__item" href="#">Подбор программы</a></li>
-          </ul>
+      <nav class="page-header__menu menu">
+        <button class="menu__btn" type="button">
+          <span class="visually-hidden">Открыть, закрыть</span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main class="page-content container">
+    <main class="page-content">
       <h1 class="visually-hidden">Главная страница магазина "Cat Energy"</h1>
-      <section class="page-content__promo promosection">
-        <div class="promosection__container">
-          <h2 class="promosection__title">Функциональное питание для котов</h2>
-          <p class="promosection__slogan">Занялся собой? Займись и котом!</p>
-          <img src="img/product.png" width="280" height="270" alt="Банка с кормом Cat Energy Pro" class="promosection__image">
-          <a href="form.html" class="promosection__btn button">
+      <section class="page-content__promo promo">
+        <div class="promo__container">
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <p class="promo__slogan">Занялся собой? Займись и котом!</p>
+          <img src="img/product.png" width="280" height="270" alt="Банка с кормом Cat Energy Pro" class="promo__image">
+          <a href="form.html" class="promo__btn button">
             Подобрать программу
           </a>
         </div>
       </section>
       <section class="page-content__offers offers container">
         <h2 class="visually-hidden">Наши предложения</h2>
-        <dl class="offers__card">
-          <dt class="offers__title offers__title--slim">Похудение</dt>
-          <dd class="offers__description">
+        <article class="offers__card offer">
+          <h3 class="offer__title offer__title--slim">Похудение</h3>
+          <p class="offer__description">
             Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить по&nbsp;деревьям? Пора на&nbsp;диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-          </dd>
-          <dd>
-            <a class="offers__link" href="blank.html">Каталог Slim</a>
-          </dd>
-        </dl>
-        <dl class="offers__card">
-          <dt class="offers__title offers__title--pro">Набор массы</dt>
-          <dd class="offers__description">
+          </p>
+          <a class="offer__link" href="blank.html">Каталог Slim</a>
+        </article>
+        <article class="offer__card">
+          <h3 class="offer__title offers__title--pro">Набор массы</h3>
+          <p class="offer__description">
             Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-          </dd>
-          <dd>
-            <a class="offers__link" href="blank.html">Каталог Pro</a>
-          </dd>
-        </dl>
+          </p>
+          <a class="offer__link" href="blank.html">Каталог Pro</a>
+        </article>
       </section>
-      <section class="feathers">
-        <h2 class="feathers__title">Как это работает</h2>
-        <ul class="feathers__list">
-          <li class="feathers__item">
+      <section class="features container">
+        <h2 class="features__title">Как это работает</h2>
+        <ul class="features__list">
+          <li class="features__item">
             Функциональное питание содержит только полезные питательные вещества.
           </li>
-          <li class="feathers__item">
+          <li class="features__item">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </li>
-          <li class="feathers__item">
+          <li class="features__item">
             Замените один-два приема обычной еды на наше функциональное питание.
           </li>
-          <li class="feathers__item">
+          <li class="features__item">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </li>
         </ul>
       </section>
-      <section class="advantages">
-        <div class="advantages__container">
-          <h2 class="advantages__title">Живой пример</h2>
-          <p class="advantages__text">
+      <section class="example">
+        <div class="example__container">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">
             Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.
           </p>
-          <table class="advantages__table analysis-table">
-            <tr class="analysis-table__row analysis-table__row--property">
-              <td class="analysis-table__slim-property">Снижение веса</td>
-              <td class="analysis-table__time-property">Затрачено времени</td>
-              <td class="analysis-table__cost-property">Затраты на питание:</td>
-            </tr>
-            <tr class="analysis-table__row analysis-table__row--value">
-              <th class="analysis-table__slim-value">5кг</th>
-              <th class="analysis-table__time-value">60 дней</th>
-              <td class="analysis-table__cost-value">15 000 руб.</td>
-            </tr>
-          </table>
-          <div class="advantages__slider slider">
+          <dl class="example__table">
+            <dt class="example__property example__property--slim">Снижение веса</dt>
+            <dd class="example--value example__value--slim">5 кг</dd>
+            <dt class="example__property example__property--time">Затрачено времени</dt>
+            <dd class="example--value example__value--time">60 дней</dd>
+            <dt class="example__property example__property--cost">Затраты на питание:</dt>
+            <dd class="example--value example__value--cost">15 000 руб.</dd>
+          </dl>
+          <div class="example__slider slider">
             <div class="slider__container slider__container--active">
               <img class="slider__img" src="img/before-mobile.png" width="311" height="232"
                    alt="Фото кота Бориса до начала употребления корма Cat Energy Slim">
-            </div>
-            <div class="slider__container">
               <img class="slider__img" src="img/after-mobile.png" width="251" height="240"
                    alt="Фото кота Бориса спустя 2 месяца употребления корма Cat Energy Slim">
             </div>
