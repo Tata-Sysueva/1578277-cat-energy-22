@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header container">
-      <a href="#" class="page-header__logo">
-        <img src="img/logo-img-mobile.svg" width="34" height="38" alt="Логотип магазина Cat Energy" class="page-header__logo-image">
-        <img src="img/logo-text-mobile.svg" width="101" height="18" alt="Магазин Cat Energy" class="page-header__title-image">
-      </a>
-      <nav class="page-header__menu menu">
-        <button class="menu__btn" type="button">
+      <div class="page-header__wrapper">
+        <a href="#" class="page-header__logo">
+          <img src="img/logo-img-mobile.svg" width="34" height="38" alt="Логотип магазина Cat Energy" class="page-header__logo-image">
+          <img src="img/logo-text-mobile.svg" width="101" height="18" alt="Магазин Cat Energy" class="page-header__title-image">
+        </a>
+        <button class="page-header__btn" type="button">
           <span class="visually-hidden">Открыть, закрыть</span>
         </button>
+      </div>
+      <nav class="page-header__menu menu">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="#">Главная</a>
@@ -29,13 +32,13 @@
     </header>
     <main class="page-content">
       <h1 class="visually-hidden">Главная страница магазина "Cat Energy"</h1>
-      <section class="page-content__promo promo">
-        <div class="promo__container">
+      <section class="page-content__promo promo container">
+        <div class="promo__wrapper">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись и котом!</p>
-          <img src="img/product.png" width="280" height="270" alt="Банка с кормом Cat Energy Pro" class="promo__image">
-          <a href="form.html" class="promo__btn primary-button">Подобрать программу</a>
         </div>
+        <img src="img/product.png" width="280" height="270" alt="Банка с кормом Cat Energy Pro" class="promo__image">
+        <a href="form.html" class="promo__btn primary-button">Подобрать программу</a>
       </section>
       <section class="page-content__offers offers container">
         <h2 class="visually-hidden">Наши предложения</h2>

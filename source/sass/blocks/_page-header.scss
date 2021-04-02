@@ -1,0 +1,76 @@
+.page-header__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 23px 16px 20px;
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+
+  margin-right: 65px;
+}
+
+.page-header__logo-image {
+  margin-right: 55px;
+}
+
+.page-header__btn {
+  padding: 0;
+
+  width: 18px;
+  height: 18px;
+
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 20px;
+    right: 32px;
+
+    content: " ";
+    width: 2px;
+    height: 25px;
+    background-color: $text-dark;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    }
+
+  &::after {
+    transform: rotate(-45deg);
+    }
+}
+
+.page-header__btn--close {
+  padding: 0;
+
+  width: 24px;
+  height: 2px;
+
+  border: none;
+  background: $text-dark;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 22px;
+    right: 23px;
+
+    content: " ";
+    width: 24px;
+    height: 2px;
+    background-color: $text-dark;
+    cursor: pointer;
+  }
+
+  &::after {
+    top: 38px;
+  }
+}
