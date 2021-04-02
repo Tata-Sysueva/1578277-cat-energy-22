@@ -1,0 +1,40 @@
+.offer {
+  padding: 30px 31px 18px 20px;
+  margin-bottom: 20px;
+  background-color: $back;
+
+  &--pro {
+    margin-bottom: 0;
+  }
+}
+
+.offer__title {
+  padding-left: 91px;
+  margin: 0 0 29px 0;
+
+  @include special-text;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $text-dark;
+}
+
+.offer__description {
+  display: block;
+  padding: 0 0 23px 0;
+  margin: 0 0 15px 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-main;
+  border-bottom: 1px solid $light-back;
+}
+
+.offer__link {
+  @include special-text;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-dark;
+}

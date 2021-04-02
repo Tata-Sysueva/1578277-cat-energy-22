@@ -1,0 +1,20 @@
+.slider__img--after {
+  display: none;
+}
+
+.slider__toggle {
+  display: inline-flex;
+}
+
+.slider__button {
+  @include special-text;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+
+  &--after {
+    margin-left: 88px;
+    margin-right: 0;
+  }
+}

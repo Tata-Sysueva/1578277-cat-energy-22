@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  align-items: center;
+  padding: 20px 77px 17px 73px;
+  margin: 0;
+  min-width: 130px;
+  list-style: none;
+  border-top: 1px solid $special-pink;
+  border-bottom: 1px solid $special-pink;
+}
+
+.socials__item {
+  margin-right: 37px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

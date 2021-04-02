@@ -1,0 +1,56 @@
+.example {
+  padding: 27px 0 25px;
+  background-color: $dark-back;
+}
+
+.example__title {
+  margin: 0 0 33px 0;
+
+  @include special-text;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-main;
+}
+
+.example__table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example__inner {
+  display: block;
+  margin-right: 31px;
+  border: 2px groove $border;
+}
+
+.example__inner--cost {
+  display: inline-flex;
+  border: none;
+}
+
+.example__property {
+  font-size: 12px;
+  line-height: 12px;
+  color: $text-main;
+}
+
+.example__value {
+  @include special-text;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__property--cost,
+.example__value--cost {
+  @include special-text;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

@@ -1,23 +1,23 @@
 @mixin primary-text {
   font: {
-   family: Arial, sans-serif;
-   style: normal;
-   weight: normal;
- }
+    family: "Arial", sans-serif;
+    style: normal;
+    weight: normal;
+  }
 }
 
 @mixin special-text {
-   font: {
-    family: Oswald, Arial, sans-serif;
+  font: {
+    family: "Oswald", "Arial", sans-serif;
     style: normal;
-    weight: normal;
- }
+    weight: 400;
+  }
 }
 
 @mixin special-text-medium {
   font: {
-   family: Oswald, Arial, sans-serif;
-   style: normal;
-   weight: 500;
- }
+    family: "Oswald", "Arial", sans-serif;
+    style: normal;
+    weight: 500;
+  }
 }
