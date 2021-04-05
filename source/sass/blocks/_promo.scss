@@ -1,24 +1,24 @@
 .promo {
   padding-bottom: 22px;
+  background: linear-gradient(to bottom, #63a63c, #63a63c 302px, transparent, transparent 302px);
 }
 
 .promo__wrapper {
-  background-image: url("../../img/catalog/mobile/promo-background.jpg");
+  background-image: url("../img/background-green.jpg");
   background-repeat: no-repeat;
 }
 
 .promo__inner {
-  padding: 27px 35px;
   min-height: 302px;
+  padding: 7px 15px;
 
-  @include special-text;
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   color: $text-promo;
-  background-color: rgba(104, 183, 56, 0.85);
 }
 
 .promo__title {
-  margin: 0 0 25px 0;
+  margin: 20px 0 25px 0;
 
   font-size: 36px;
   font-weight: 400;

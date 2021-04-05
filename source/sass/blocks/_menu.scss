@@ -1,16 +1,15 @@
 .menu {
-  @include special-text-medium;
   padding: 0;
-  list-style: none;
+
+  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
 .menu__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  @include list-reset;
   text-align: center;
 }
 
@@ -19,17 +18,19 @@
   padding-bottom: 24px;
 
   border-top: 1px solid $special-pink;
-  border-bottom: 1px solid $special-pink;
-
-  &:nth-child(2) {
-    border: none;
-  }
-
-  &:last-child {
-    border-bottom: none;
-  }
 }
 
 .menu__link {
   color: $text-dark;
+}
+
+.menu__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu__icon-menu {
+  display: none;
 }

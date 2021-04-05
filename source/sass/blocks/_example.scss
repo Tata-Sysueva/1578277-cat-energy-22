@@ -1,14 +1,15 @@
 .example {
   padding: 27px 0 25px;
+
   background-color: $dark-back;
 }
 
 .example__title {
   margin: 0 0 33px 0;
 
-  @include special-text;
   font-size: 36px;
   line-height: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .example__text {
@@ -42,15 +43,15 @@
 }
 
 .example__value {
-  @include special-text;
   font-size: 24px;
   line-height: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .example__property--cost,
 .example__value--cost {
-  @include special-text;
   font-size: 14px;
   line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
 }

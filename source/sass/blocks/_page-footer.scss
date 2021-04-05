@@ -6,22 +6,20 @@
 }
 
 .page-footer__cooperation {
-  @include special-text;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-
   max-width: 125px;
   margin: 0 15px 0 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
 }
 
 .page-footer__address {
+  max-width: 140px;
   font-size: 14px;
   font-style: normal;
   line-height: 20px;
   color: $text-main;
-
-  max-width: 140px;
 }
 
 .page-footer__map-image,

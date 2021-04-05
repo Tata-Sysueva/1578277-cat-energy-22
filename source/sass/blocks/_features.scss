@@ -1,20 +1,18 @@
 .features__title {
   margin: 0 0 38px 0;
 
-  @include special-text;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .features__list {
-  padding: 0;
-  margin: 0;
+  @include list-reset;
 
   font-size: 14px;
   line-height: 18px;
   color: $text-main;
-
-  list-style: none;
 }
 
 .features__item {

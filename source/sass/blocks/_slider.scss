@@ -7,9 +7,9 @@
 }
 
 .slider__button {
-  @include special-text;
   font-size: 16px;
   line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   border: none;
 
