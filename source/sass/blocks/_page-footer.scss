@@ -1,0 +1,51 @@
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.page-footer__cooperation {
+  max-width: 125px;
+  margin: 0 15px 0 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.page-footer__address {
+  max-width: 140px;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  color: $text-main;
+}
+
+.page-footer__map-image,
+.page-footer__map {
+  display: flex;
+}
+
+.page-footer__contacts {
+  background-color: $back;
+}
+
+.page-footer__logo {
+  display: block;
+  padding: 39px 0 37px 0;
+  text-align: center;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  padding: 22px 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-main;
+}
+
+.page-footer__copyright-text {
+  margin-right: 138px;
+}

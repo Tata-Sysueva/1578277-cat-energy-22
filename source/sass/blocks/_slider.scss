@@ -1,0 +1,20 @@
+.slider__img--after {
+  display: none;
+}
+
+.slider__toggle {
+  display: inline-flex;
+}
+
+.slider__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  border: none;
+
+  &--after {
+    margin-left: 88px;
+    margin-right: 0;
+  }
+}

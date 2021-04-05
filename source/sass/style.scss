@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+@import "global";
+@import "container";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "blocks/page";
+@import "blocks/page-header";
+@import "blocks/menu";
+@import "blocks/promo";
+@import "blocks/primary-button";
+@import "blocks/offers";
+@import "blocks/offer";
+@import "blocks/features";
+@import "blocks/example";
+@import "blocks/slider";
+@import "blocks/page-footer";
+@import "blocks/socials";
