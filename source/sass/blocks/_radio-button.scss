@@ -1,0 +1,35 @@
+.radio-button {
+  padding-right: 15px;
+  padding-left: 45px;
+}
+
+.radio-button .radio-button__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-button__input + .radio-button__label::before {
+  content: " ";
+  position: absolute;
+  left: -45px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid $border;
+  border-radius: 50%;
+}
+
+.radio-button__input:checked + .radio-button__label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -36px;
+  width: 13px;
+  height: 13px;
+
+  background-color: $main;
+  border-radius: 50%;
+}
