@@ -42,12 +42,18 @@
       <form method="POST" action="https://echo.htmlacademy.ru/courses" class="page-content__form form">
         <fieldset class="form__group form__group--pet">
           <legend class="visually-hidden">Данные о питомце</legend>
-          <label for="name">Имя:<sup>*</sup></label>
-          <input class="form__field form__field--name" id="name" type="text" name="cat-name" placeholder="Барсик">
-          <label for="weight">Вес (кг):<sup>*</sup></label>
-          <input class="form__field form__field--weight" id="weight" type="number" name="cat-weight" placeholder="7">
-          <label for="age">Возраст (лет):</label>
-          <input class="form__field form__field--age" id="age" type="number" name="cat-age" placeholder="7">
+          <div class="form__group-item feedback">
+            <label class="feedback__label" for="name">Имя:<sup>*</sup></label>
+            <input class="feedback__field" id="name" type="text" name="cat-name" placeholder="Барсик">
+          </div>
+          <div class="form__group-item feedback">
+            <label class="feedback__label" for="weight">Вес (кг):<sup>*</sup></label>
+            <input class="feedback__field" id="weight" type="number" name="cat-weight" placeholder="7">
+          </div>
+          <div class="form__group-item feedback">
+            <label class="feedback__label" for="age">Возраст (лет):</label>
+            <input class="feedback__field" id="age" type="number" name="cat-age" placeholder="7">
+          </div>
         </fieldset>
         <fieldset class="form__group form__group--program">
           <legend class="visually-hidden">Выбор программы питания</legend>
@@ -66,15 +72,21 @@
         </fieldset>
         <fieldset class="form__group form__group--owner">
           <legend class="form__text form__text--owner">Контактные данные (владельца кота)</legend>
-          <label for="owner-email">E-mail:<sup>*</sup></label>
-          <input class="form__field form__field--owner" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
-          <label for="owner-tel">Телефон:<sup>*</sup></label>
-          <input class="form__field form__field--tel" id="owner-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90">
+          <div class="form__group-item feedback">
+            <label class="feedback__label" for="owner-email">E-mail:<sup>*</sup></label>
+            <input class="feedback__field feedback__field--owner" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+          </div>
+          <div class="form__group-item form__group-item--owner feedback">
+            <label class="feedback__label" for="owner-tel">Телефон:<sup>*</sup></label>
+            <input class="feedback__field feedback__field--tel" id="owner-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90">
+          </div>
         </fieldset>
         <fieldset class="form__group form__group--comment">
           <legend class="form__text form__text--comment">Комментарий</legend>
-          <label for="text-field" class="visually-hidden">Текст комментария:</label>
-          <textarea class="form__field form__field--text" id="text-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="form__group-item feedback">
+            <label class="visually-hidden" for="text-field">Текст комментария:</label>
+            <textarea class="feedback__field feedback__field--text" id="text-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <fieldset class="form__group form__group--supplements">
           <legend class="form__text form__text--supplements">Дополнительно</legend>
