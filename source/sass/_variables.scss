@@ -5,12 +5,13 @@ $lightgrey: #cdcdcd;
 $grey: #666666;
 $browngrey: #444444;
 $darkgrey: #222222;
+$special-grey: #e7e7e7;
 $salmon: #ff8282;
 $special-green: #5eaa2f;
 $special-pink: #e6e6e6;
 $white: #ffffff;
 $black: #000000;
-$pink: #d9d9d9;
+$special-lightgrey: #d9d9d9;
 $beige: #eaeaea;
 
 
@@ -19,8 +20,9 @@ $text-promo: $white;
 $text-dark: $black;
 $main: $basic-green;
 $main-special: $special-green;
-$light-back: $pink;
+$light-back: $special-lightgrey;
 $dark-back: $beige;
 $back: $basic-grey;
 $error: $salmon;
 $border: $lightgrey;
+$form-field: $special-grey;

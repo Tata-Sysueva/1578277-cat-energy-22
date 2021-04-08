@@ -1,0 +1,39 @@
+.checkbox {
+  padding-right: 10px;
+}
+
+.checkbox .checkbox__label {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox__input + .checkbox__label::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.checkbox__input:checked + .filter__sign::before {
+  display: none;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}

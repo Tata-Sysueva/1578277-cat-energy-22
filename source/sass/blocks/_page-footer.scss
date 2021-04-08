@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   padding-top: 28px;
   padding-bottom: 28px;
+
+  &--catalog {
+    background-color: $back;
+  }
 }
 
 .page-footer__cooperation {

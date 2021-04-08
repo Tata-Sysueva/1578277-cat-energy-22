@@ -1,0 +1,101 @@
+.form {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__group {
+  margin: 0;
+  padding: 0 0 28px 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid $light-back;
+
+  &--program {
+    padding-top: 28px;
+    padding-bottom: 25px;
+  }
+
+  &--owner {
+    margin-top: 26px;
+    padding-bottom: 23px;
+  }
+
+  &--comment {
+    margin-top: 23px;
+    padding-bottom: 23px;
+    border: none;
+  }
+
+  &--supplements {
+    padding-bottom: 34px;
+    border: none;
+  }
+}
+
+.form__element {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__text {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  color: $text-dark;
+
+  &--owner {
+    margin-bottom: 35px;
+  }
+
+  &--comment {
+    padding-bottom: 37px;
+  }
+
+  &--supplements {
+    padding-bottom: 34px;
+  }
+}
+
+.form__item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__btn {
+  margin-bottom: 21px;
+  padding: 8px 78px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.form__note {
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  text-transform: none;
+}
+
+.form__group-item {
+  margin-bottom: 12px;
+
+  &--owner {
+    margin-bottom: 14px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

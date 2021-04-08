@@ -1,0 +1,35 @@
+.feedback {
+  display: inline-grid;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  width: 280px;
+}
+
+.feedback__label {
+  margin-right: 13px;
+}
+
+.feedback__field {
+  padding: 13px 10px 14px 16px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $text-main;
+
+  border: 1px solid $special-grey;
+  outline: none;
+
+  &--text {
+    grid-column: 1/-1;
+    height: 150px;
+    margin: 0;
+
+    resize: none;
+  }
+
+  &::placeholder {
+    color: $text-main;
+  }
+}

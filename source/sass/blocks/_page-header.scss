@@ -2,7 +2,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 12px 23px 16px 20px;
+  padding: 12px 0 16px 0;
+
+  border-bottom: 1px solid $special-pink;
 }
 
 .page-header__logo {

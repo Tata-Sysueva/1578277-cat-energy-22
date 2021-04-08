@@ -1,6 +1,6 @@
 .promo {
   padding-bottom: 22px;
-  background: linear-gradient(to bottom, #63a63c, #63a63c 302px, transparent, transparent 302px);
+  background: linear-gradient(to bottom, #63a63c, #63a63c 303px, transparent, transparent 302px);
 }
 
 .promo__wrapper {
@@ -9,7 +9,6 @@
 }
 
 .promo__inner {
-  min-height: 302px;
   padding: 7px 15px;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -26,6 +25,7 @@
 }
 
 .promo__slogan {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;

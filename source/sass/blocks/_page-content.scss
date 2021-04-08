@@ -1,0 +1,21 @@
+.page-content {
+  padding-top: 27px;
+  padding-bottom: 32px;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.page-content__title {
+  margin: 0 0 37px 0;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.page-content__description {
+  margin: 0 0 39px 0;
+  max-width: 226px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
