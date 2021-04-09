@@ -2,10 +2,11 @@
   display: block;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   text-transform: uppercase;
   color: $text-promo;
 
   background-color: $main;
   border: none;
 }
+

@@ -73,18 +73,15 @@
   margin-bottom: 21px;
   padding: 8px 78px;
 
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .form__note {
   text-align: center;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   text-transform: none;
 }
 
