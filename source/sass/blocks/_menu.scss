@@ -23,6 +23,10 @@
   &:first-child {
     border: none;
   }
+
+  &:last-child {
+    border-bottom: 1px solid $special-pink;
+  }
 }
 
 .menu__link {
