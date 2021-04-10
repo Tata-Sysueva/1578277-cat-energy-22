@@ -1,21 +1,50 @@
 .page-content {
   padding-top: 27px;
   padding-bottom: 32px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
+
+  &--index {
+    padding-top: 0;
+    font-family: $arial;
+  }
 }
 
 .page-content__title {
-  margin: 0 0 37px 0;
+  margin: 0 20px 37px 20px;
 
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+
+  &--catalog {
+    margin-bottom: 41px;
+  }
 }
 
 .page-content__description {
   margin: 0 0 39px 0;
+  padding-right: 20px;
+  padding-left: 20px;
   max-width: 226px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.page-content__gift {
+  min-height: 289px;
+  background-image: url("../img/gift-back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-content__text {
+  margin: 0;
+  padding: 186px 81px 0 78px;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $arial;
+  color: $text-promo;
 }

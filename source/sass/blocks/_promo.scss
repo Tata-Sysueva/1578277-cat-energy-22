@@ -1,9 +1,11 @@
 .promo {
   padding-bottom: 22px;
-  background: linear-gradient(to bottom, #63a63c, #63a63c 303px, transparent, transparent 302px);
+  background: linear-gradient(to bottom, $back-green, $back-green 303px, transparent, transparent 302px);
 }
 
 .promo__wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
   background-image: url("../img/background-green.jpg");
   background-repeat: no-repeat;
 }

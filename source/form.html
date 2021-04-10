@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="page-header  container">
+    <header class="page-header container">
       <div class="page-header__wrapper">
         <a href="#" class="page-header__logo">
           <img src="img/logo-img-mobile.svg" width="34" height="38" alt="Логотип магазина Cat Energy" class="page-header__logo-image">
@@ -26,7 +26,7 @@
             <a class="menu__link" href="index.html">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="catalog.html">Каталог</a>
+            <a class="menu__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="form.html">Подбор программы</a>
@@ -39,20 +39,20 @@
       <p class="page-content__description">
         Заполните анкету, и мы подберём программу питания для вашего кота
       </p>
-      <form method="POST" action="https://echo.htmlacademy.ru/courses" class="page-content__form form">
+      <form class="page-content__form form" method="POST" action="https://echo.htmlacademy.ru/courses">
         <fieldset class="form__group form__group--pet">
           <legend class="visually-hidden">Данные о питомце</legend>
-          <div class="form__group-item feedback">
-            <label class="feedback__label" for="name">Имя:<sup>*</sup></label>
-            <input class="feedback__field" id="name" type="text" name="cat-name" placeholder="Барсик">
+          <div class="form__group-item form-control">
+            <label class="form-control__label" for="name">Имя:<sup>*</sup></label>
+            <input class="form-control__field" id="name" type="text" name="cat-name" placeholder="Барсик">
           </div>
-          <div class="form__group-item feedback">
-            <label class="feedback__label" for="weight">Вес (кг):<sup>*</sup></label>
-            <input class="feedback__field" id="weight" type="number" name="cat-weight" placeholder="7">
+          <div class="form__group-item form-control">
+            <label class="form-control__label" for="weight">Вес (кг):<sup>*</sup></label>
+            <input class="form-control__field" id="weight" type="number" name="cat-weight" placeholder="7">
           </div>
-          <div class="form__group-item feedback">
-            <label class="feedback__label" for="age">Возраст (лет):</label>
-            <input class="feedback__field" id="age" type="number" name="cat-age" placeholder="7">
+          <div class="form__group-item form-control">
+            <label class="form-control__label" for="age">Возраст (лет):</label>
+            <input class="form-control__field" id="age" type="number" name="cat-age" placeholder="7">
           </div>
         </fieldset>
         <fieldset class="form__group form__group--program">
@@ -72,43 +72,58 @@
         </fieldset>
         <fieldset class="form__group form__group--owner">
           <legend class="form__text form__text--owner">Контактные данные (владельца кота)</legend>
-          <div class="form__group-item feedback">
-            <label class="feedback__label" for="owner-email">E-mail:<sup>*</sup></label>
-            <input class="feedback__field feedback__field--owner" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+          <div class="form__group-item form-control">
+            <label class="form-control__label" for="owner-email">E-mail:<sup>*</sup></label>
+            <input class="form-control__field form-control__field--owner" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
           </div>
-          <div class="form__group-item form__group-item--owner feedback">
-            <label class="feedback__label" for="owner-tel">Телефон:<sup>*</sup></label>
-            <input class="feedback__field feedback__field--tel" id="owner-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90">
+          <div class="form__group-item form__group-item--owner form-control">
+            <label class="form-control__label" for="owner-tel">Телефон:<sup>*</sup></label>
+            <input class="form-control__field form-control__field--tel" id="owner-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90">
           </div>
         </fieldset>
         <fieldset class="form__group form__group--comment">
           <legend class="form__text form__text--comment">Комментарий</legend>
-          <div class="form__group-item feedback">
+          <div class="form__group-item form-control">
             <label class="visually-hidden" for="text-field">Текст комментария:</label>
-            <textarea class="feedback__field feedback__field--text" id="text-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form-control__field form-control__field--text" id="text-field" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="form__group form__group--supplements">
           <legend class="form__text form__text--supplements">Дополнительно</legend>
           <div class="form__item checkbox">
-            <input type="checkbox" id="sugar" class="checkbox__input visually-hidden" checked>
-            <label for="sugar" class="checkbox__label">Сахарозаменитель</label>
+            <label for="sugar" class="checkbox__label">
+              <input type="checkbox" id="sugar" class="checkbox__input visually-hidden" checked>
+              <svg class="checkbox_svg" width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="checkbox_line" d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z" fill="#68B738"/></svg>
+            Сахарозаменитель</label>
           </div>
           <div class="form__item checkbox">
-            <input type="checkbox" id="water" class="checkbox__input visually-hidden">
-            <label for="water" class="checkbox__label">Питьевая вода</label>
+            <label for="water" class="checkbox__label">
+              <input type="checkbox" id="water" class="checkbox__input visually-hidden">
+              <svg class="checkbox_svg" width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="checkbox_line" d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z" fill="#68B738"/>
+              </svg>
+            Питьевая вода</label>
           </div>
           <div class="form__item checkbox">
-            <input type="checkbox" id="milk" class="checkbox__input visually-hidden">
-            <label for="milk" class="checkbox__label">Молоко</label>
+            <label for="milk" class="checkbox__label">
+              <input type="checkbox" id="milk" class="checkbox__input visually-hidden">
+              <svg class="checkbox_svg" width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="checkbox_line" d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z" fill="#68B738"/>
+              </svg>
+            Молоко</label>
           </div>
           <div class="form__item checkbox">
-            <input type="checkbox" id="vitamins" class="checkbox__input visually-hidden">
-            <label for="vitamins" class="checkbox__label">Витамины</label>
+            <label for="vitamins" class="checkbox__label">
+              <input type="checkbox" id="vitamins" class="checkbox__input visually-hidden">
+              <svg class="checkbox_svg" width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="checkbox_line" d="M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z" fill="#68B738"/>
+              </svg>
+            Витамины</label>
           </div>
         </fieldset>
         <button class="form__btn primary-button" type="submit">Отправить заявку</button>
-        <p class="form__note"><sup>*</sup> — Обязательные поля</p>
+        <p class="form__note">* — Обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
@@ -116,8 +131,8 @@
         <p class="page-footer__cooperation">Приглашаем к сотрудничеству дилеров!</p>
         <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <div class="page-footer__map container">
-        <img src="img/map.jpg" width="320" height="362" alt="Офис магазина по адресу город Санкт-Петербург, улица Большая Конюшенная, дом 19/8" class="page-footer__map-image">
+      <div class="page-footer__map">
+        <iframe class="page-footer__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.9919987303897!2d30.320439600490996!3d59.93850547005891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618024616357!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="page-footer__contacts">
         <div class="page-footer__box container">

@@ -2,7 +2,7 @@
   padding-right: 10px;
 }
 
-.checkbox .checkbox__label {
+.checkbox__label {
   position: relative;
   display: block;
   padding-left: 45px;
@@ -10,7 +10,24 @@
   user-select: none;
 }
 
-.checkbox__input + .checkbox__label::before {
+.checkbox__input:checked + .checkbox_svg {
+  display: inline-grid;
+}
+
+.checkbox__input + .checkbox_svg {
+  display: none;
+}
+
+.checkbox_svg {
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  margin: 0;
+  width: 18px;
+  height: 14px;
+}
+
+.checkbox__label::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -18,22 +35,13 @@
   width: 30px;
   height: 30px;
 
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
+  border: 1px solid $border;
 }
 
-.checkbox__input:checked + .filter__sign::before {
-  display: none;
-}
-
-.checkbox__input:checked + .checkbox__label::after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 30px;
-  height: 30px;
-
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
+.checkbox_line {
+  fill: $basic-green;
+  stroke: $basic-green;
+  stroke-width: 0;
+  stroke-miterlimit: 4.0;
+  stroke-dasharray: 0, 154;
 }
