@@ -1,9 +1,7 @@
 .card {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 18px 25px 20px;
-  border-top: 1px solid $cards-border;
-  border-bottom: 1px solid $cards-border;
+  padding: 20px 0 25px;
 }
 
 .card__title {
@@ -32,7 +30,7 @@
 }
 
 .card__wrapper {
-  width: 142px;
+  width: 140px;
   margin-bottom: 22px;
 }
 

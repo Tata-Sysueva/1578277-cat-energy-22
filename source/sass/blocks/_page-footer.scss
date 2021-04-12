@@ -47,13 +47,16 @@
 
 .page-footer__copyright {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 22px 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   font-size: 16px;
   line-height: 18px;
   color: $text-main;
 }
 
-.page-footer__copyright-text {
-  margin-right: 138px;
+.page-footer__element {
+  border-top: 1px solid $special-pink;
+  border-bottom: 1px solid $special-pink;
 }

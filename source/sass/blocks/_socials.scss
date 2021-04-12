@@ -1,11 +1,12 @@
 .socials {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 20px 77px 17px 73px;
-  min-width: 130px;
-  border-top: 1px solid $special-pink;
-  border-bottom: 1px solid $special-pink;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 17px;
 }
 
 .socials__item {

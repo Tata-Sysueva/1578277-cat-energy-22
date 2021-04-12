@@ -11,7 +11,7 @@
 }
 
 .promo__inner {
-  padding: 7px 15px;
+  padding: 7px 0 15px;
 
   font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
@@ -35,4 +35,8 @@
 
 .promo__btn {
   padding: 12px 73px;
+}
+
+.promo__image {
+  display: block;
 }

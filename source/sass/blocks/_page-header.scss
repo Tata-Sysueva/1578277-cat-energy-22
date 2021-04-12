@@ -1,18 +1,29 @@
 .page-header__wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 12px 20px 16px;
+  padding: 12px 0 16px;
 
   border-bottom: 1px solid $special-pink;
 }
 
+.page-header__inner {
+  display: flex;
+}
+
 .page-header__logo {
   display: flex;
-  align-items: center;
   margin-right: 65px;
 }
 
 .page-header__logo-image {
   margin-right: 55px;
+}
+
+.page-header__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.page-header__icon-menu {
+  display: none;
 }
