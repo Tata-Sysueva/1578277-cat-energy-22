@@ -10,18 +10,16 @@
   user-select: none;
 }
 
-.checkbox__input:checked + .checkbox_svg {
-  display: inline-grid;
+.checkbox__input:checked + .checkbox__svg {
+  display: block;
 }
 
-.checkbox__input + .checkbox_svg {
-  display: none;
-}
-
-.checkbox_svg {
+.checkbox__svg {
   position: absolute;
   top: 3px;
   left: 7px;
+
+  display: none;
   margin: 0;
   width: 18px;
   height: 14px;
@@ -38,7 +36,7 @@
   border: 1px solid $border;
 }
 
-.checkbox_line {
+.checkbox__line {
   fill: $basic-green;
   stroke: $basic-green;
   stroke-width: 1;

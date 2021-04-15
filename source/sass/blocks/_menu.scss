@@ -5,13 +5,32 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-right: 110px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .menu__list {
   @include list-reset;
   text-align: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .menu__item {
@@ -26,6 +45,33 @@
 
   &:last-child {
     border-bottom: 1px solid $special-pink;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 32px;
+    border: none;
+
+    &:nth-child(2) {
+      padding-right: 36px;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border: none;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 37px;
+    border: none;
+
+    &:nth-child(2) {
+      padding-right: 32px;
+    }
   }
 }
 

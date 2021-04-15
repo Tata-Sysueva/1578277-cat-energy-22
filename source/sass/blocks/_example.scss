@@ -2,6 +2,11 @@
   padding: 27px 0 25px;
 
   background-color: $dark-back;
+
+  @media (min-width: 768px) {
+    padding: 43px 0 67px;
+    background: linear-gradient(to top, $dark-back, $dark-back 384px, transparent, transparent 384px);
+  }
 }
 
 .example__title {
@@ -10,7 +15,14 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
+
+  @media (min-width: 768px) {
+    margin-bottom: 63px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__text {
@@ -19,6 +31,13 @@
   font-size: 14px;
   line-height: 18px;
   color: $text-main;
+
+  @media (min-width: 768px) {
+    margin-bottom: 54px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__table {
@@ -29,30 +48,54 @@
 .example__inner {
   display: block;
   margin-right: 31px;
-  border: 2px groove $border;
+  border: 2px solid $border;
+
+  @media (min-width: 768px) {
+    margin-right: 42px;
+  }
 }
 
 .example__inner--cost {
-  display: inline-flex;
+  display: flex;
   border: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    margin-left: 167px;
+  }
 }
 
 .example__property {
   font-size: 12px;
   line-height: 12px;
   color: $text-main;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__value {
   font-size: 24px;
   line-height: 24px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__property--cost,
 .example__value--cost {
   font-size: 14px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    text-align: end;
+  }
 }

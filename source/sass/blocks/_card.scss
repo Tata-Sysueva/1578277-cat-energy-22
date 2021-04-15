@@ -1,7 +1,8 @@
 .card {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0 25px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .card__title {
@@ -50,7 +51,7 @@
 }
 
 .card__inner {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   width: 100%;
 }
@@ -60,13 +61,10 @@
 }
 
 .card__button {
-  padding: 10px 109px;
-
   font-size: 16px;
   line-height: 20px;
 
   &--show-more {
-    padding: 10px 94px;
     color: $text-main;
     background-color: $special-btn;
   }

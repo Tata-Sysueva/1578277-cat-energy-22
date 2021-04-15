@@ -1,5 +1,5 @@
 .form-control {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: auto 1fr;
   align-items: baseline;
   width: 100%;
@@ -14,7 +14,7 @@
 
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   text-transform: uppercase;
   color: $text-main;
 

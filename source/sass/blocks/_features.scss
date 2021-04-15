@@ -1,5 +1,10 @@
 .features {
   padding-bottom: 42px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 47px;
+    border-bottom: 1px solid $special-border;
+  }
 }
 
 .features__title {
@@ -8,7 +13,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .features__list {
@@ -17,6 +27,14 @@
   font-size: 14px;
   line-height: 18px;
   color: $text-main;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(2, 230px);
+    row-gap: 37px;
+    column-gap: 153px;
+  }
 }
 
 .features__item {
@@ -24,5 +42,9 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0;
   }
 }
