@@ -47,9 +47,9 @@
             <h2 class="promo__title">Функциональное<br>питание для котов</h2>
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
           </div>
+          <a href="form.html" class="promo__btn primary-button primary-button--promo-tablet">Подобрать программу</a>
           <img class="promo__image" src="img/product.png" width="280" height="270" alt="Банка с кормом Cat Energy Pro">
           <img class="promo__image promo__image--tablet" src="img/product-tablet.jpg" width="709" height="609" alt="Банка с кормом Cat Energy Pro">
-          <a href="form.html" class="promo__btn primary-button primary-button--promo-tablet">Подобрать программу</a>
         </div>
       </section>
       <section class="page-content__offers offers container">
@@ -69,24 +69,22 @@
           <a class="offer__link" href="blank.html">Каталог Pro</a>
         </article>
       </section>
-      <section class="features">
-        <div class="container">
-          <h2 class="features__title">Как это работает</h2>
-          <ul class="features__list">
-            <li class="features__item">
-              Функциональное питание содержит только полезные питательные вещества.
-            </li>
-            <li class="features__item">
-              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-            </li>
-            <li class="features__item">
-              Замените один-два приема обычной еды на наше функциональное питание.
-            </li>
-            <li class="features__item">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-            </li>
-          </ul>
-        </div>
+      <section class="features container">
+        <h2 class="features__title">Как это работает</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            Функциональное питание содержит только полезные питательные вещества.
+          </li>
+          <li class="features__item">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+          </li>
+          <li class="features__item">
+            Замените один-два приема обычной еды на наше функциональное питание.
+          </li>
+          <li class="features__item">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          </li>
+        </ul>
       </section>
       <section class="example">
         <div class="example__wrapper container">
@@ -99,7 +97,7 @@
               <dt class="example__property example__property--slim">Снижение веса</dt>
               <dd class="example__value example__value--slim">5 кг</dd>
             </div>
-            <div class="example__inner">
+            <div class="example__inner example__inner--days">
               <dt class="example__property example__property--time">Затрачено времени</dt>
               <dd class="example__value example__value--time">60 дней</dd>
             </div>
@@ -109,9 +107,13 @@
             </div>
           </dl>
           <div class="example__slider slider">
-            <div class="slider__container">
+            <div class="slider__container-mobile">
               <img class="slider__img slider__img--before" src="img/before-mobile.png" width="311" height="232" alt="Фото кота Бориса до начала употребления корма Cat Energy Slim">
               <img class="slider__img slider__img--after" src="img/after-mobile.png" width="251" height="240" alt="Фото кота Бориса спустя 2 месяца употребления корма Cat Energy Slim">
+            </div>
+            <div class="slider__container-tablet">
+              <img class="slider__img slider__img--before" src="img/before-tablet.png" width="677" height="520" alt="Фото кота Бориса до начала употребления корма Cat Energy Slim">
+              <img class="slider__img slider__img--after" src="img/after-tablet.png" width="545" height="520" alt="Фото кота Бориса спустя 2 месяца употребления корма Cat Energy Slim">
             </div>
             <div class="slider__toggle">
               <button class="slider__button slider__button--before">Было</button>
@@ -131,12 +133,12 @@
         <iframe class="page-footer__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.9919987303897!2d30.320439600490996!3d59.93850547005891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618024616357!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="page-footer__contacts">
-        <div class="page-footer__container">
-          <a href="#" class="page-footer__logo container">
+        <div class="page-footer__container container">
+          <a href="#" class="page-footer__logo">
             <img src="img/footer-logo.svg" width="128" height="24" alt="Магазин Cat Energy" class="page-footer__title-image">
           </a>
           <div class="page-footer__element">
-            <ul class="socials container container--reset">
+            <ul class="socials">
               <li class="socials__item">
                 <a class="socials__link socials__link--vk" href="#" title="Вконтакте" target="_blank" rel="noopener noreferrer">
                   <span class="visually-hidden">Ссылка на страницу магазина в социальной сети "В Контакте"</span>
@@ -163,7 +165,7 @@
               </li>
             </ul>
           </div>
-          <a class="page-footer__copyright container container--reset" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
+          <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
             <span class="page-footer__copyright-text">HTML Academy</span>
             <svg class="page-footer__copyright-icon" aria-hidden="true" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>

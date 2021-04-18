@@ -4,9 +4,16 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+
   padding-top: 20px;
   padding-bottom: 17px;
+
+  border-top: 1px solid $special-pink;
+  border-bottom: 1px solid $special-pink;
+
+  @media (min-width: 768px) {
+    border: none;
+  }
 }
 
 .socials__item {

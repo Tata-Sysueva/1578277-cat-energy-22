@@ -4,4 +4,11 @@
   @media (min-width: 768px) {
     padding-bottom: 45px;
   }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-bottom: 71px;
+  }
 }

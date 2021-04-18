@@ -10,17 +10,24 @@
     padding-right: 30px;
   }
 
+  @media (min-width: 1440px) {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+
   &--reset {
     @media (min-width: 768px) {
       width: auto;
       padding-left: 0;
       padding-right: 0;
     }
-  }
 
-  @media (min-width: 1440px) {
-    width: auto;
-    padding-left: 110px;
-    padding-right: 110px;
+    @media (min-width: 1440px) {
+      width: auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }

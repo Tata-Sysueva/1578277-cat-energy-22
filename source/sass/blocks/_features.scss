@@ -5,6 +5,11 @@
     padding-bottom: 47px;
     border-bottom: 1px solid $special-border;
   }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 11px;
+    border: none;
+  }
 }
 
 .features__title {
@@ -34,6 +39,12 @@
     grid-template-columns: repeat(2, 230px);
     row-gap: 37px;
     column-gap: 153px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(4, 230px);
+    row-gap: 0;
+    column-gap: 94px;
   }
 }
 
