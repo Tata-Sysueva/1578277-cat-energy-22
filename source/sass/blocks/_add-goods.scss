@@ -1,5 +1,5 @@
 .add-goods {
-  padding: 25px 20px 39px;
+  padding-top: 25px;
 }
 
 .add-goods__title {
@@ -9,4 +9,16 @@
   font-size: 24px;
   line-height: 24px;
   font-family: $oswald;
+}
+
+.add-goods__list {
+  @include list-reset;
+}
+
+.add-goods__item {
+  border-top: 1px solid $border;
+
+  &:last-child {
+    border-bottom: 1px solid $border;
+  }
 }

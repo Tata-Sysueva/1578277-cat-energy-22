@@ -1,4 +1,5 @@
 .page-footer {
+  position: relative;
   background-color: $back;
 
   &--index {
@@ -9,7 +10,23 @@
 .page-footer__wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   padding: 28px 19px;
+
+  @media (min-width: 768px) {
+    padding: 62px 72px 51px 71px;
+  }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    top: 80px;
+    left: calc(50vw - 640px);
+
+    max-width: 570px;
+    padding: 66px 89px 51px 76px;
+    background-color: $white;
+  }
 }
 
 .page-footer__cooperation {
@@ -19,6 +36,12 @@
   line-height: 18px;
   font-family: $oswald;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    max-width: 171px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .page-footer__address {
@@ -27,6 +50,19 @@
   font-style: normal;
   line-height: 20px;
   color: $text-main;
+
+  @media (min-width: 768px) {
+    max-width: 159px;
+    font-size: 16px;
+    text-align: end;
+  }
+
+  &--space {
+    @media (min-width: 768px) {
+      display: block;
+      margin-top: 23px;
+    }
+  }
 }
 
 .page-footer__map-image {
@@ -39,21 +75,58 @@
   background-color: $back;
 }
 
+.page-footer__container {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .page-footer__logo {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 39px;
+  padding-bottom: 37px;
+
+  @media (min-width: 768px) {
+    margin-right: 156px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: 413px;
+  }
+}
+
+.page-footer__title-image {
   display: block;
-  padding: 39px 0 37px 0;
-  text-align: center;
+
+  @media (min-width: 768px) {
+    max-width: 128px;
+  }
 }
 
 .page-footer__copyright {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 22px 20px;
+  min-width: 163px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
   font-size: 16px;
   line-height: 18px;
   color: $text-main;
 }
 
-.page-footer__copyright-text {
-  margin-right: 138px;
+.page-footer__element {
+  @media (min-width: 768px) {
+    min-width: 129px;
+    margin-right: 138px;
+    border: none;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: 387px;
+  }
 }

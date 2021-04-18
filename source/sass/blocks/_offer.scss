@@ -1,4 +1,6 @@
 .offer {
+  display: flex;
+  flex-direction: column;
   padding: 30px 31px 18px 20px;
   margin-bottom: 20px;
   background-color: $back;
@@ -6,18 +8,48 @@
   &--pro {
     margin-bottom: 0;
   }
+
+  @media (min-width: 768px) {
+    padding: 77px 53px 53px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 77px 51px 55px;
+    margin-right: 80px;
+    margin-bottom: 0;
+
+    &--pro {
+      margin-right: 0;
+    }
+  }
 }
 
 .offer__title {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 91px;
   margin: 0 0 29px 0;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   text-transform: uppercase;
   color: $text-dark;
+
+  @media (min-width: 768px) {
+    padding-left: 0;
+    margin-bottom: 24px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: 1440px) {
+    align-self: center;
+    margin-bottom: 73px;
+  }
 }
 
 .offer__description {
@@ -29,13 +61,32 @@
   line-height: 18px;
   color: $text-main;
   border-bottom: 1px solid $light-back;
+
+  @media (min-width: 768px) {
+    max-width: 377px;
+    padding: 0;
+    margin-bottom: 48px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 467px;
+  }
 }
 
 .offer__link {
   font-size: 16px;
   line-height: 16px;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-align: center;
+  font-family: $oswald;
   text-transform: uppercase;
   color: $text-dark;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

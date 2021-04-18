@@ -1,11 +1,19 @@
 .socials {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 20px 77px 17px 73px;
-  min-width: 130px;
+  justify-content: center;
+
+  padding-top: 20px;
+  padding-bottom: 17px;
+
   border-top: 1px solid $special-pink;
   border-bottom: 1px solid $special-pink;
+
+  @media (min-width: 768px) {
+    border: none;
+  }
 }
 
 .socials__item {
@@ -13,5 +21,9 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (min-width: 768px) {
+    margin-right: 27px;
   }
 }

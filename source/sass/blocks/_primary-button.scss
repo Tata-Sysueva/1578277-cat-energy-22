@@ -1,5 +1,12 @@
 .primary-button {
-  display: block;
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  gap: 0;
+
+  width: 100%;
+  padding: 10px 35px;
   font-size: 14px;
   line-height: 18px;
   font-family: $oswald;
@@ -8,4 +15,12 @@
 
   background-color: $main;
   border: none;
+
+  &--promo-tablet {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+
 }
