@@ -14,6 +14,12 @@
   align-items: center;
   padding: 28px 19px;
 
+  &--form {
+    @media (min-width: 768px) {
+      padding-bottom: 59px;
+    }
+  }
+
   @media (min-width: 768px) {
     padding: 62px 72px 51px 71px;
   }

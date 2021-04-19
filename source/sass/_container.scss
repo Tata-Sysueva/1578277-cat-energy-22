@@ -8,6 +8,11 @@
     width: 768px;
     padding-left: 30px;
     padding-right: 30px;
+
+    &--catalog {
+      padding-left: 70px;
+      padding-right: 67px;
+    }
   }
 
   @media (min-width: 1440px) {
@@ -23,7 +28,9 @@
       padding-left: 0;
       padding-right: 0;
     }
+  }
 
+  &--reset-form {
     @media (min-width: 1440px) {
       width: auto;
       padding-left: 0;

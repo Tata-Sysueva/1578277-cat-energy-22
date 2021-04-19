@@ -2,6 +2,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__group {
@@ -12,24 +17,71 @@
   border-left: none;
   border-bottom: 1px solid $light-back;
 
+  &--pet {
+    @media (min-width: 1440px) {
+      margin-right: 80px;
+      padding: 0;
+    }
+  }
+
   &--program {
     padding-top: 28px;
     padding-bottom: 25px;
+
+    @media (min-width: 768px) {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 44px;
+      margin-bottom: 71px;
+    }
+
+    @media (min-width: 1440px) {
+      margin: 0;
+    }
   }
 
   &--owner {
     margin-top: 26px;
     padding-bottom: 23px;
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+      margin-bottom: 65px;
+      padding-bottom: 0;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 69px;
+    }
   }
 
   &--comment {
     margin-top: 23px;
     padding-bottom: 23px;
     border: none;
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+      margin-bottom: 65px;
+      padding-bottom: 0;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 76px;
+    }
   }
 
   &--supplements {
-    padding-bottom: 34px;
+    margin-bottom: 37px;
+    padding-bottom: 0;
+    border: none;
+
+    @media (min-width: 768px) {
+      margin-bottom: 34px;
+    }
+  }
+
+  @media (min-width: 768px) {
     border: none;
   }
 }
@@ -50,16 +102,55 @@
 
   &--owner {
     margin-bottom: 35px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 76px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 70px;
+    }
   }
 
   &--comment {
     padding-bottom: 37px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 76px;
+      padding-bottom: 0;
+    }
   }
 
   &--supplements {
     padding-bottom: 34px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 57px;
+      padding-bottom: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
   }
 }
+
+.form__item-box {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 61px;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
 
 .form__item {
   margin-bottom: 25px;
@@ -67,14 +158,18 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .form__btn {
   margin-bottom: 21px;
-  padding-top: 8px;
 
-  font-size: 16px;
-  line-height: 20px;
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .form__note {
@@ -83,16 +178,76 @@
   line-height: 16px;
   font-family: $arial;
   text-transform: none;
+
+  @media (min-width: 1440px) {
+    margin-left: 81px;
+    text-align: left;
+  }
 }
 
 .form__group-item {
   margin-bottom: 12px;
 
-  &--owner {
-    margin-bottom: 14px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__grid {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 530px auto;
+    column-gap: 78px;
+  }
+}
+
+.form__column {
+  margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
   }
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.form__wrap {
+  @media (min-width: 768px) {
+    padding: 30px 30px 30px 28px;
+    border: 1px solid $light-back;
+  }
+}
+
+.form__box-btn {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 282px auto;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: 50% 50%;
+    margin-bottom: 82px;
+  }
+}
+
+.form__container {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin: 0 auto 69px;
   }
 }

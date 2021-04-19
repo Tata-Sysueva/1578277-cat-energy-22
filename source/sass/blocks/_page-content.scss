@@ -1,11 +1,14 @@
 .page-content {
   padding-top: 27px;
-  //padding-bottom: 32px;
   font-family: $oswald;
 
   &--index {
     padding-top: 0;
     font-family: $arial;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 0;
   }
 }
 
@@ -19,6 +22,21 @@
   &--catalog {
     margin-bottom: 41px;
   }
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+
+    &--catalog {
+      margin-bottom: 54px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &--form {
+      margin-bottom: 56px;
+    }
+  }
 }
 
 .page-content__description {
@@ -27,6 +45,14 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    max-width: 323px;
+    margin: 0 0 66px 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .page-content__gift {

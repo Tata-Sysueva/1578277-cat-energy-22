@@ -98,6 +98,7 @@
 
 .promo__btn {
   order: 3;
+
   @media (min-width: 768px) {
     order: 0;
     max-width: 244px;
