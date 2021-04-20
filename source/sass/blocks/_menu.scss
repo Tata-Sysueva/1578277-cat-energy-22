@@ -8,13 +8,13 @@
   font-family: $oswald;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -24,7 +24,7 @@
   @include list-reset;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -44,7 +44,7 @@
     border-bottom: 1px solid $special-pink;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 32px;
@@ -60,7 +60,7 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 37px;

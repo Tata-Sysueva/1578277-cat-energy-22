@@ -1,7 +1,7 @@
 .slider__container-mobile {
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
@@ -9,7 +9,7 @@
 .slider__container-tablet {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: block;
   }
 }

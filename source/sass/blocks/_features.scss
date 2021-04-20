@@ -1,12 +1,12 @@
 .features {
   padding-bottom: 42px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding-bottom: 47px;
     border-bottom: 1px solid $special-border;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     padding-bottom: 11px;
     border: none;
   }
@@ -20,7 +20,7 @@
   line-height: 40px;
   font-family: $oswald;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -33,7 +33,7 @@
   line-height: 18px;
   color: $text-main;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: repeat(2, 230px);
@@ -41,7 +41,7 @@
     column-gap: 153px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     grid-template-columns: repeat(4, 230px);
     row-gap: 0;
     column-gap: 94px;
@@ -55,7 +55,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin: 0;
   }
 }

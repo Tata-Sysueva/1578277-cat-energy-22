@@ -7,7 +7,7 @@
     font-family: $arial;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding-top: 0;
   }
 }
@@ -23,7 +23,7 @@
     margin-bottom: 41px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
 
@@ -32,7 +32,7 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     &--form {
       margin-bottom: 56px;
     }
@@ -46,7 +46,7 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     max-width: 323px;
     margin: 0 0 66px 0;
 
