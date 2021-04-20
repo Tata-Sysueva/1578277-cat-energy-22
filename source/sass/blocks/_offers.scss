@@ -1,11 +1,11 @@
 .offers {
   padding-bottom: 27px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding-bottom: 45px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
 

@@ -27,9 +27,20 @@
     margin: 0;
 
     resize: none;
+
+    @media (min-width: $desktop) {
+      height: 174px;
+    }
   }
 
   &::placeholder {
     color: $text-main;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 10px 10px 11px 18px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }
