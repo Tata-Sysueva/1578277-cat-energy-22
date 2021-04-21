@@ -16,21 +16,14 @@
   background-color: $main;
   border: none;
 
-  &--promo-tablet {
-    @media (min-width: $tablet) {
+  @media (min-width: $tablet) {
+    &--promo-tablet {
       padding: 14px 26px;
       font-size: 20px;
       line-height: 20px;
     }
-  }
 
-  &--form-btn {
-    padding-top: 8px;
-
-    font-size: 16px;
-    line-height: 20px;
-
-    @media (min-width: $tablet) {
+    &--form-btn {
       padding: 14px 45px;
 
       font-size: 20px;

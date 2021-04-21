@@ -1,5 +1,16 @@
 .add-goods {
   padding-top: 25px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    padding-top: 68px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 76px;
+    padding-bottom: 86px;
+  }
 }
 
 .add-goods__title {
@@ -9,6 +20,19 @@
   font-size: 24px;
   line-height: 24px;
   font-family: $oswald;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 80px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.add-goods__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .add-goods__list {
@@ -20,5 +44,64 @@
 
   &:last-child {
     border-bottom: 1px solid $border;
+  }
+
+  @media (min-width: $tablet) {
+    border-right: 1px solid $border;
+    border-left: 1px solid $border;
+  }
+
+  @media (min-width: $desktop) {
+    width: 896px;
+    margin-right: 79px;
+
+    border-right: none;
+    border-left: none;
+  }
+}
+
+.add-goods__gift {
+  display: block;
+  margin-top: 39px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet) {
+    margin-top: 69px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.add-goods__text {
+  margin: 0;
+  padding: 186px 51px 43px 58px;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $arial;
+  color: $text-promo;
+
+  background-color: $main;
+  background-image: url("../img/gift-back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    padding: 71px 124px 69px 423px;
+
+    text-align: left;
+    background-image: url("../img/gift-back-tab.jpg");
+  }
+
+  @media (min-width: $desktop) {
+    padding: 185px 43px 42px 41px;
+
+    text-align: center;
+    background-image: url("../img/gift-back.jpg");
   }
 }

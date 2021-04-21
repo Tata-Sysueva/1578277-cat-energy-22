@@ -27,10 +27,6 @@
     margin: 0;
 
     resize: none;
-
-    @media (min-width: $desktop) {
-      height: 174px;
-    }
   }
 
   &::placeholder {
@@ -42,5 +38,11 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    &--text {
+      height: 174px;
+    }
   }
 }

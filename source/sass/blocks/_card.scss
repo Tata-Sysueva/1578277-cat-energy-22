@@ -3,6 +3,11 @@
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    justify-content: center;
+    padding: 0 37px 40px 39px;
+  }
 }
 
 .card__title {
@@ -19,6 +24,28 @@
     width: 204px;
     margin: 78px 37px 8px 39px;
   }
+
+  @media (min-width: $tablet) {
+    width: 132px;
+    margin-bottom: 21px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: center;
+
+    &--show-more {
+      width: 134px;
+      margin: 161px 57px 23px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--show-more {
+      margin: 167px 16px 26px;
+      line-height: 25px;
+    }
+  }
 }
 
 .card__link {
@@ -28,11 +55,50 @@
 .card__link-image {
   display: block;
   order: -1;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 46px;
+  }
+}
+
+.card__image {
+  display: block;
+  order: -1;
+
+  &--tablet {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+
+    &--tablet {
+      display: block;
+      margin-top: -73px;
+      order: -1;
+    }
+  }
 }
 
 .card__wrapper {
   width: 140px;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 251px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+  }
 }
 
 .card__info {
@@ -48,12 +114,40 @@
   &--desc {
     margin: 0 30px 21px 29px;
   }
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 16px;
+
+    &--desc {
+      width: 167px;
+      margin: 0 0 87px 0;
+
+      line-height: 18px;
+      text-align: center;
+    }
+  }
 }
 
 .card__inner {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 250px;
+
+  @media (min-width: $tablet) {
+    padding-top: 7px;
+    padding-bottom: 9px;
+
+    border-bottom: 1px solid $border;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 166px;
+  }
 }
 
 .card__value {

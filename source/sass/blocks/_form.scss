@@ -17,73 +17,73 @@
   border-left: none;
   border-bottom: 1px solid $light-back;
 
-  &--pet {
-    @media (min-width: $desktop) {
-      width: calc(50% - 40px);
-      padding: 0;
-    }
-  }
-
   &--program {
     padding-top: 28px;
     padding-bottom: 25px;
-
-    @media (min-width: $tablet) {
-      padding-top: 0;
-      padding-bottom: 0;
-      margin-top: 44px;
-      margin-bottom: 71px;
-    }
-
-    @media (min-width: $desktop) {
-      width: calc(50% - 40px);
-      margin: 0;
-    }
   }
 
   &--owner {
     margin-top: 26px;
     padding-bottom: 23px;
-
-    @media (min-width: $tablet) {
-      margin-top: 0;
-      margin-bottom: 65px;
-      padding-bottom: 0;
-    }
-
-    @media (min-width: $desktop) {
-      margin-bottom: 69px;
-    }
   }
 
   &--comment {
     margin-top: 23px;
     padding-bottom: 23px;
     border: none;
-
-    @media (min-width: $tablet) {
-      margin-top: 0;
-      margin-bottom: 65px;
-      padding-bottom: 0;
-    }
-
-    @media (min-width: $desktop) {
-      margin-bottom: 76px;
-    }
   }
 
   &--supplements {
     margin-bottom: 37px;
     padding-bottom: 0;
     border: none;
-
-    @media (min-width: $tablet) {
-      margin-bottom: 34px;
-    }
   }
 
   @media (min-width: $tablet) {
     border: none;
+
+    &--program {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 44px;
+      margin-bottom: 71px;
+    }
+
+    &--owner {
+      margin-top: 0;
+      margin-bottom: 65px;
+      padding-bottom: 0;
+    }
+
+    &--comment {
+      margin-top: 0;
+      margin-bottom: 65px;
+      padding-bottom: 0;
+    }
+
+    &--supplements {
+      margin-bottom: 34px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--pet {
+      width: calc(50% - 40px);
+      padding: 0;
+    }
+
+    &--program {
+      width: calc(50% - 40px);
+      margin: 0;
+    }
+
+    &--owner {
+      margin-bottom: 69px;
+    }
+
+    &--comment {
+      margin-bottom: 76px;
+    }
   }
 }
 
