@@ -1,11 +1,18 @@
 .add-good {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: start;
-
   padding-top: 13px;
   padding-bottom: 19px;
+
+  @media (min-width: $tablet) {
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 288px 288px 244px;
+    gap: 38px;
+    align-items: flex-start;
+    padding: 15px 0 17px;
+  }
 }
 
 .add-good__title {
@@ -16,10 +23,23 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $card-title;
+
+  @media (min-width: $tablet) {
+    margin-right: 10px;
+    margin-bottom: 28px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 11px;
+    margin-bottom: 7px;
+  }
 }
 
 .add-good__list {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
@@ -31,6 +51,24 @@
   line-height: 14px;
   font-family: $arial;
   color: $text-main;
+
+  @media (min-width: $tablet) {
+    width: auto;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 11px;
+    margin-bottom: 7px;
+  }
+}
+
+.add-good__property {
+  @media (min-width: $tablet) {
+    margin-right: 49px;
+  }
 }
 
 .add-good__value {
@@ -40,4 +78,8 @@
 .add-good__button {
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    line-height: 18px;
+  }
 }

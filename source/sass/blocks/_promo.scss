@@ -75,26 +75,29 @@
 .promo__image {
   display: block;
 
-  @media (min-width: $tablet) {
+  &--tablet {
     display: none;
   }
 
-  &--tablet {
+  @media (min-width: $tablet) {
     display: none;
 
-    @media (min-width: $tablet) {
+    &--tablet {
       position: absolute;
       top: 220px;
       display: block;
       z-index: -1;
     }
+  }
 
-    @media (min-width: $desktop) {
+  @media (min-width: $desktop) {
+    &--tablet {
       top: -15%;
       left: calc(50vw - 250px);
     }
   }
 }
+
 
 .promo__btn {
   order: 3;

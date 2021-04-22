@@ -27,8 +27,12 @@
     font-size: 60px;
     line-height: 60px;
 
-    &--catalog {
+    &--form {
       margin-bottom: 54px;
+    }
+
+    &--catalog {
+      margin-bottom: 164px;
     }
   }
 
@@ -55,24 +59,18 @@
   }
 }
 
-.page-content__gift {
-  display: block;
-  min-height: 289px;
-  margin-top: 39px;
-}
+.page-content__cards {
+  @media (min-width: $tablet) {
+    width: $tablet;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-.page-content__text {
-  margin: 0;
-  padding: 186px 51px 43px 58px;
-
-  text-align: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: $arial;
-  color: $text-promo;
-
-  background-color: $main;
-  background-image: url("../img/gift-back.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  @media (min-width: $desktop) {
+    width: $desktop;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
