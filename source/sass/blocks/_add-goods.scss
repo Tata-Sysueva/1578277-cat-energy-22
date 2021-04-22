@@ -37,6 +37,10 @@
 
 .add-goods__list {
   @include list-reset;
+
+  @media (min-width: $desktop) {
+    margin-right: 79px;
+  }
 }
 
 .add-goods__item {
@@ -52,9 +56,6 @@
   }
 
   @media (min-width: $desktop) {
-    width: 896px;
-    margin-right: 79px;
-
     border-right: none;
     border-left: none;
   }
