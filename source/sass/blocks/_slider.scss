@@ -19,18 +19,106 @@
 }
 
 .slider__toggle {
-  display: inline-flex;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 24px;
+
+  @media (min-width: $tablet) {
+    margin-top: 9px;
+  }
 }
 
 .slider__button {
+  padding: 0;
+
   font-size: 16px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   text-transform: uppercase;
-  border: none;
 
-  &--after {
-    margin-left: 88px;
-    margin-right: 0;
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &--before {
+    margin-right: 18px;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+
+    border-bottom: 1px dotted $text-dark024;
+
+    &:hover {
+      border-bottom: 1px solid $text-dark04;
+    }
+  }
+}
+
+.slider__thumb {
+  display: block;
+  width: 84px;
+  height: 14px;
+  margin-right: 18px;
+  padding: 3px 3px 4px;
+
+  color: $main;
+
+  background-color: $white;
+  border: 1px solid $border;
+  border-radius: 6px;
+
+  @media (min-width: $tablet) {
+    width: 428px;
+    height: 6px;
+
+    background-color: $basic-lightgrey;
+    border: none;
+    border-radius: 6px;
+  }
+}
+
+.slider__bar {
+  width: 50%;
+  height: 6px;
+
+  background-color: $main;
+  border-radius: 6px;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    left: 330px;
+
+    width: 8px;
+    height: 8px;
+    padding: 0;
+
+    border: 13px solid $white;
+    background-color: $main;
+    border-radius: 50%;
+    box-shadow:
+      0 0 3px $text-dark016,
+      0 1px 3px $text-dark016;
+    box-sizing: content-box;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow:
+        0 0 0 1px $main,
+        0 2px 4px $text-dark019;
+    }
+
+    &:active {
+      box-shadow:
+        0 0 0 1px $text-dark016,
+        0 2px 4px $text-dark019;
+    }
   }
 }

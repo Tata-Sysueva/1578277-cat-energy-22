@@ -14,4 +14,10 @@
   font-size: 18px;
   line-height: 24px;
   font-family: $arial;
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/background-green-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50vw 0;
+  }
 }

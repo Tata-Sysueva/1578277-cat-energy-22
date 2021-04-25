@@ -103,6 +103,14 @@
   padding-top: 39px;
   padding-bottom: 37px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet) {
     margin-right: 156px;
   }
@@ -131,6 +139,15 @@
   font-size: 16px;
   line-height: 18px;
   color: $text-main;
+}
+
+.page-footer__copyright:hover > .page-footer__copyright-icon path {
+  fill: $main;
+}
+
+.page-footer__copyright:active > .page-footer__copyright-icon path,
+.page-footer__copyright:active {
+  opacity: 0.3;
 }
 
 .page-footer__element {

@@ -16,6 +16,14 @@
   background-color: $main;
   border: none;
 
+  &:hover {
+    background-color: $main-special;
+  }
+
+  &:active {
+    color: $text-promo03;
+  }
+
   @media (min-width: $tablet) {
     &--promo-tablet {
       padding: 14px 26px;

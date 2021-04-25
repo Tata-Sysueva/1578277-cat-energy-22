@@ -27,3 +27,17 @@
     margin-right: 27px;
   }
 }
+
+.socials__link:hover > .socials__svg path {
+  fill: $main;
+}
+
+.socials__link:hover > .socials__svg--facebook path {
+  fill: none;
+  stroke: $main;
+}
+
+.socials__link:active > .socials__svg path,
+.socials__link:active > .socials__svg--facebook path {
+  opacity: 0.3;
+}
