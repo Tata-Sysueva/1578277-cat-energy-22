@@ -91,8 +91,8 @@
 
   @media (min-width: $desktop) {
     width: $desktop;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -139,15 +139,19 @@
   font-size: 16px;
   line-height: 18px;
   color: $text-main;
+
+  &:hover {
+    color: $main;
+  }
+
+  &active,
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
-.page-footer__copyright:hover > .page-footer__copyright-icon path {
-  fill: $main;
-}
-
-.page-footer__copyright:active > .page-footer__copyright-icon path,
-.page-footer__copyright:active {
-  opacity: 0.3;
+.page-footer__copyright-text {
+  color: $text-main;
 }
 
 .page-footer__element {

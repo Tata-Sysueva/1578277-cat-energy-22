@@ -28,16 +28,14 @@
   }
 }
 
-.socials__link:hover > .socials__svg path {
-  fill: $main;
-}
+.socials__link {
+  color: $social-icon;
 
-.socials__link:hover > .socials__svg--facebook path {
-  fill: none;
-  stroke: $main;
-}
+  &:hover {
+    color: $main;
+  }
 
-.socials__link:active > .socials__svg path,
-.socials__link:active > .socials__svg--facebook path {
-  opacity: 0.3;
+  &:active {
+    color: $main;
+  }
 }

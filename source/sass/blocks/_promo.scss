@@ -10,6 +10,23 @@
 
   @media (min-width: $desktop) {
     padding-bottom: 267px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      content: "";
+
+      width: 50%;
+      height: 694px;
+      bottom: 75px;
+      left: 50%;
+
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-green-desktop.jpg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-color: $back-green;
+    }
   }
 }
 
@@ -18,6 +35,7 @@
   flex-direction: column;
   background-image: url("../img/background-green.jpg");
   background-repeat: no-repeat;
+  background-position: center top;
 
   @media (min-width: $tablet) {
     background: none;
@@ -73,6 +91,7 @@
 
 .promo__image {
   display: block;
+  margin: 0 auto;
 
   &--tablet {
     display: none;

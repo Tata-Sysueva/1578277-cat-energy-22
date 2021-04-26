@@ -14,13 +14,16 @@
   }
 }
 
+.slider__img {
+  display: block;
+  margin: 0 auto;
+}
+
 .slider__img--after {
   display: none;
 }
 
 .slider__toggle {
-  position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +64,9 @@
   }
 }
 
-.slider__thumb {
+.slider__scale {
+  position: relative;
+
   display: block;
   width: 84px;
   height: 14px;
@@ -84,7 +89,7 @@
   }
 }
 
-.slider__bar {
+.slider__thumb {
   width: 50%;
   height: 6px;
 
@@ -93,8 +98,8 @@
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: 0;
-    left: 330px;
+    top: -15px;
+    left: 50%;
 
     width: 8px;
     height: 8px;

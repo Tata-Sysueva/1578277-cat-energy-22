@@ -99,11 +99,15 @@
   margin: 0 31px 34px 0;
   padding: 14px 0 17px 0;
 
-  border: 2px solid $border;
+  border: 1px solid $border;
   border-radius: 3px;
 
+  &--slim {
+    margin-left: auto;
+  }
+
   &--days {
-    margin-right: 0;
+    margin-right: auto;
   }
 
   &--cost {
@@ -152,6 +156,7 @@
 
   &--cost {
     padding-right: 5px;
+    padding-left: 15px;
 
     color: $text-dark;
   }
@@ -163,6 +168,7 @@
     &--cost {
       margin-bottom: 9px;
       padding-right: 0;
+      padding-left: 0;
     }
   }
 
@@ -208,20 +214,6 @@
   }
 }
 
-.example__property--cost,
-.example__value--cost {
-  font-size: 14px;
-  line-height: 20px;
-  font-family: $oswald;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet) {
-    font-size: 20px;
-    text-align: end;
-  }
-}
-
-
 .example__value {
   margin: 0;
 
@@ -233,6 +225,19 @@
   @media (min-width: $tablet) {
     font-size: 30px;
     line-height: 37px;
+  }
+}
+
+.example__property--cost,
+.example__value--cost {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $oswald;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    text-align: end;
   }
 }
 

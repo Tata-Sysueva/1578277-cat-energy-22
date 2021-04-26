@@ -1,11 +1,11 @@
 .container {
-  width: 320px;
+  max-width: 540px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 
   @media (min-width: $tablet) {
-    width: $tablet;
+    max-width: none;
     padding-left: 30px;
     padding-right: 30px;
 
@@ -16,9 +16,9 @@
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    padding-left: 110px;
-    padding-right: 110px;
+    max-width: $desktop;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
 

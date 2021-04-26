@@ -38,9 +38,11 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: repeat(2, 249px);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 90px;
-    column-gap: 137px;
+    column-gap: 121px;
+
+    margin-right: 61px;
 
     font-size: 16px;
     line-height: 24px;
@@ -78,31 +80,19 @@
     background-size: contain;
   }
 
-  &--leaf {
-    background-image: url("../img/one.svg");
-    background-position: 65% 100%;
-  }
-
   &--water {
-    background-image: url("../img/two.svg");
-
     &::before {
       background-image: url("../img/water.svg");
     }
   }
 
   &--eat {
-    background-image: url("../img/three.svg");
-
     &::before {
       background-image: url("../img/eat.svg");
     }
   }
 
   &--scales {
-    background-image: url("../img/four.svg");
-    background-position: 95% 100%;
-
     &::before {
       background-image: url("../img/scales.svg");
     }
@@ -112,13 +102,32 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 31px;
+    gap: 0;
     margin: 0;
     padding: 0 0 44px;
 
     &::before {
       width: 80px;
       height: 80px;
+      margin-bottom: 31px;
+    }
+
+    &--leaf {
+      background-image: url("../img/one.svg");
+      background-position: 65% 100%;
+    }
+
+    &--water {
+      background-image: url("../img/two.svg");
+    }
+
+    &--eat {
+      background-image: url("../img/three.svg");
+    }
+
+    &--scales {
+      background-image: url("../img/four.svg");
+      background-position: 95% 100%;
     }
   }
 }
