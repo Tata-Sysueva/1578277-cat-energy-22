@@ -10,15 +10,26 @@ $salmon: #ff8282;
 $special-green: #5eaa2f;
 $special-pink: #e6e6e6;
 $white: #ffffff;
+$white03: rgba(255, 255, 255, 0.3);
 $black: #000000;
+$black024: rgba(0, 0, 0, 0.24);
+$black016: rgba(0, 0, 0, 0.16);
+$black04: rgba(0, 0, 0, 0.4);
+$black019: rgba(0, 0, 0, 0.19);
 $special-lightgrey: #d9d9d9;
 $beige: #eaeaea;
 $green: #63a63c;
+$basic-lightgrey: #dcdcdc;
 
 
 $text-main: $browngrey;
 $text-promo: $white;
+$text-promo03: $white03;
 $text-dark: $black;
+$text-dark024: $black024;
+$text-dark016: $black016;
+$text-dark04: $black04;
+$text-dark019: $black019;
 $main: $basic-green;
 $main-special: $special-green;
 $light-back: $special-lightgrey;
@@ -32,6 +43,7 @@ $cards-border: $pinkgrey;
 $card-title: $darkgrey;
 $special-btn: $basic-grey;
 $special-border: $special-pink;
+$social-icon: $grey;
 
 //text
 
@@ -41,4 +53,4 @@ $oswald: "Oswald", "Arial", sans-serif;
 //breakpoints
 
 $tablet: 768px;
-$desktop: 1440px;
+$desktop: 1280px;

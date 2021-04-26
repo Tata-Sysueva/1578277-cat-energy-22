@@ -27,3 +27,15 @@
     margin-right: 27px;
   }
 }
+
+.socials__link {
+  color: $social-icon;
+
+  &:hover {
+    color: $main;
+  }
+
+  &:active {
+    color: $main;
+  }
+}

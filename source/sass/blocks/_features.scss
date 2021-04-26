@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 11px;
+    padding-bottom: 0;
     border: none;
   }
 }
@@ -21,6 +21,8 @@
   font-family: $oswald;
 
   @media (min-width: $tablet) {
+    margin-bottom: 72px;
+
     font-size: 60px;
     line-height: 60px;
   }
@@ -36,26 +38,96 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: repeat(2, 230px);
-    row-gap: 37px;
-    column-gap: 153px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 90px;
+    column-gap: 121px;
+
+    margin-right: 61px;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: repeat(4, 230px);
-    row-gap: 0;
-    column-gap: 94px;
+    grid-template-columns: repeat(4, 250px);
+    row-gap: 11px;
+    column-gap: 74px;
   }
 }
 
 .features__item {
-  margin: 0 0 20px 80px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  align-items: center;
+  margin: 0 0 20px 0;
+
+  background-repeat: no-repeat;
+  background-position: 90% 100%;
+  background-size: contain;
 
   &:last-child {
     margin-bottom: 0;
   }
 
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/leaf.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--water {
+    &::before {
+      background-image: url("../img/water.svg");
+    }
+  }
+
+  &--eat {
+    &::before {
+      background-image: url("../img/eat.svg");
+    }
+  }
+
+  &--scales {
+    &::before {
+      background-image: url("../img/scales.svg");
+    }
+  }
+
   @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0;
     margin: 0;
+    padding: 0 0 44px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+
+    &--leaf {
+      background-image: url("../img/one.svg");
+      background-position: 65% 100%;
+    }
+
+    &--water {
+      background-image: url("../img/two.svg");
+    }
+
+    &--eat {
+      background-image: url("../img/three.svg");
+    }
+
+    &--scales {
+      background-image: url("../img/four.svg");
+      background-position: 95% 100%;
+    }
   }
 }
