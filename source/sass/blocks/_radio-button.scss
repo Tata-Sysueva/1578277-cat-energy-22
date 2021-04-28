@@ -27,6 +27,14 @@
   }
 }
 
+.radio-button__input:hover + .radio-button__label::before {
+  border-color: $border-strong;
+}
+
+.radio-button__input:disabled + .radio-button__label {
+  opacity: 0.3;
+}
+
 .radio-button__input:checked + .radio-button__label::after {
   content: "";
   position: absolute;

@@ -76,7 +76,7 @@
 }
 
 .page-footer__container {
-  width: 320px;
+  max-width: 540px;
   margin: 0 auto;
   padding-left: 19px;
   padding-right: 22px;
@@ -84,13 +84,14 @@
   @media (min-width: $tablet) {
     display: flex;
     align-items: center;
-    width: $tablet;
+
+    max-width: none;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
+    max-width: 1440px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -112,7 +113,7 @@
   }
 
   @media (min-width: $tablet) {
-    margin-right: 156px;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop) {
@@ -157,7 +158,7 @@
 .page-footer__element {
   @media (min-width: $tablet) {
     min-width: 129px;
-    margin-right: 131px;
+    margin-right: auto;
     border: none;
   }
 

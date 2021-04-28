@@ -53,10 +53,17 @@
   }
 }
 
+.checkbox__label:hover::before {
+  border-color: $border-strong;
+}
+
+.checkbox__label--disabled {
+  opacity: 0.3;
+}
+
 .checkbox__line {
   fill: $basic-green;
   stroke: $basic-green;
   stroke-width: 1;
-  //stroke-miterlimit: 4.0;
   stroke-dasharray: 0, 154;
 }
