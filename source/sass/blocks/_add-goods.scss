@@ -32,6 +32,7 @@
 .add-goods__wrapper {
   @media (min-width: $desktop) {
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -39,6 +40,7 @@
   @include list-reset;
 
   @media (min-width: $desktop) {
+    min-width: 896px;
     margin-right: 79px;
   }
 }
@@ -51,11 +53,15 @@
   }
 
   @media (min-width: $tablet) {
+    max-width: 935px;
+    margin: 0 auto;
     border-right: 1px solid $border;
     border-left: 1px solid $border;
   }
 
   @media (min-width: $desktop) {
+    max-width: none;
+    margin: 0;
     border-right: none;
     border-left: none;
   }
@@ -78,6 +84,8 @@
 }
 
 .add-goods__text {
+  position: relative;
+
   margin: 0;
   padding: 186px 51px 43px 58px;
 
@@ -91,12 +99,33 @@
   background-image: url("../img/gift-back.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    top: 55px;
+
+    width: 80px;
+    height: 83px;
+
+    background-image: url("../img/icon_gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    content: " ";
+  }
 
   @media (min-width: $tablet) {
+    max-width: none;
     padding: 71px 124px 69px 423px;
 
     text-align: left;
     background-image: url("../img/gift-back-tab.jpg");
+
+    &::before {
+      top: 55px;
+      left: 90px;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -104,5 +133,10 @@
 
     text-align: center;
     background-image: url("../img/gift-back.jpg");
+
+    &::before {
+      top: 55px;
+      left: auto;
+    }
   }
 }

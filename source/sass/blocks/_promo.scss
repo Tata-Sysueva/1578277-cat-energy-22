@@ -20,7 +20,7 @@
       width: 50%;
       height: 694px;
       bottom: 75px;
-      left: 50%;
+      left: calc(50vw + 2px);
 
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-green-desktop.jpg");
       background-repeat: no-repeat;

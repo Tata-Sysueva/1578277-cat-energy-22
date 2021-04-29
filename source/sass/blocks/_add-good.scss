@@ -8,7 +8,7 @@
 
   @media (min-width: $desktop) {
     display: grid;
-    grid-template-columns: 288px 288px 244px;
+    grid-template-columns: repeat(3, 1fr);
     gap: 38px;
     align-items: flex-start;
     padding: 15px 0 17px;
@@ -16,6 +16,7 @@
 }
 
 .add-good__title {
+  min-width: 288px;
   margin: 0 0 13px 0;
 
   font-weight: normal;
@@ -34,6 +35,7 @@
 
   @media (min-width: $desktop) {
     margin-top: 11px;
+    margin-right: 0;
     margin-bottom: 7px;
   }
 }
@@ -42,6 +44,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  min-width: 288px;
   width: 100%;
   margin: 0 0 15px 0;
 

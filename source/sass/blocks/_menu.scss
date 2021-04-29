@@ -76,6 +76,14 @@
 .menu__link {
   color: $text-dark;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     &--current {
       border-bottom: 2px solid $main;
@@ -83,20 +91,12 @@
   }
 
   @media (min-width: $desktop) {
-    &-- {
-      color: $text-promo;
-    }
-
-    &--current-desktop {
+    &--current {
       border-bottom-color: inherit;
     }
-  }
 
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
+    &--index {
+      color: $text-promo;
+    }
   }
 }
