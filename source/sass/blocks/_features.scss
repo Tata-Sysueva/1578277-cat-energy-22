@@ -46,10 +46,12 @@
 
     font-size: 16px;
     line-height: 24px;
+
+    counter-reset: numbers;
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 11px;
     column-gap: 74px;
   }
@@ -99,6 +101,8 @@
   }
 
   @media (min-width: $tablet) {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -112,22 +116,26 @@
       margin-bottom: 31px;
     }
 
-    &--leaf {
-      background-image: url("../img/one.svg");
-      background-position: 65% 100%;
+    &::after {
+      position: absolute;
+      top: -37px;
+      right: 15px;
+
+      display: block;
+      z-index: -1;
+
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 280px;
+
+      color: $back;
+
+      counter-increment: numbers;
+      content: counter(numbers);
     }
 
-    &--water {
-      background-image: url("../img/two.svg");
-    }
-
-    &--eat {
-      background-image: url("../img/three.svg");
-    }
-
-    &--scales {
-      background-image: url("../img/four.svg");
-      background-position: 95% 100%;
+    &:first-child::after {
+      right: 35px;
     }
   }
 }

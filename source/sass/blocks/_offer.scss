@@ -17,7 +17,6 @@
 
   @media (min-width: $desktop) {
     padding: 77px 51px 55px;
-    margin-right: 80px;
     margin-bottom: 0;
 
     &--pro {
@@ -145,7 +144,7 @@
   }
 
   @media (min-width: $desktop) {
-    max-width: 467px;
+    max-width: none;
 
     &::after {
       display: none;

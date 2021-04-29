@@ -1,4 +1,6 @@
 .form-control {
+  position: relative;
+
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: baseline;
@@ -10,7 +12,7 @@
 }
 
 .form-control__field {
-  padding: 13px 10px 14px 16px;
+  padding: 13px 40px 13px 16px;
 
   font-size: 16px;
   line-height: 18px;
@@ -21,6 +23,29 @@
   border: 1px solid $special-grey;
   outline: none;
 
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &::placeholder {
+    color: $text-main;
+  }
+
+  &:hover {
+    border-color: $border;
+  }
+
+  &:focus {
+    border: 2px solid $text-main;
+  }
+
+  &--error {
+    border: 2px solid $error;
+  }
+
   &--text {
     grid-column: 1/-1;
     height: 150px;
@@ -29,15 +54,15 @@
     resize: none;
   }
 
-  &::placeholder {
-    color: $text-main;
-  }
-
   @media (min-width: $tablet) {
-    padding: 10px 10px 11px 18px;
+    padding: 10px 40px 11px 18px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &--tel {
+      padding-right: 17px;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -45,4 +70,33 @@
       height: 174px;
     }
   }
+}
+
+.form-control__svg {
+  position: absolute;
+  top: 36%;
+  right: 3%;
+
+  width: 18px;
+  height: 13px;
+
+  background-color: $card-title;
+  mask-image: url("../img/icon-email.svg");
+
+  &--tel {
+    right: 2%;
+
+    width: 20px;
+    height: 21px;
+
+    mask-image: url("../img/icon-phone.svg");
+  }
+}
+
+.form-control__field:focus + .form-control__svg {
+  background-color: $main;
+}
+
+.form-control__field--error + .form-control__svg {
+  background-color: $error;
 }

@@ -61,16 +61,16 @@
 
 .page-content__cards {
   @media (min-width: $tablet) {
-    width: $tablet;
+    max-width: 1024px;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
+    max-width: 1440px;
     margin: 0 auto;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
