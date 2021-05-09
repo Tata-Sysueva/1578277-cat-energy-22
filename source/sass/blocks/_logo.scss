@@ -8,34 +8,18 @@
   }
 }
 
-.logo__image--mobile {
-  display: block;
+.logo__image {
   margin-right: 55px;
 
   @media (min-width: $tablet) {
-    display: none;
-  }
-}
-
-.logo__image--tablet {
-  display: none;
-
-  @media (min-width: $tablet) {
-    display: block;
+    width: 61px;
+    height: 50px;
     margin-right: 12px;
   }
 
   @media (min-width: $desktop) {
-    display: none;
+    width: 71px;
+    height: 59px;
     margin-right: 12px;
-  }
-}
-
-.logo__image--desktop {
-  display: none;
-
-  @media (min-width: $desktop) {
-    display: block;
-    margin-right: 14px;
   }
 }

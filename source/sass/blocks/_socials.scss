@@ -17,14 +17,10 @@
 }
 
 .socials__item {
-  margin-right: calc(5px + 10vw);
+  margin-right: auto;
 
   &:last-child {
     margin-right: 0;
-  }
-
-  @media (min-width: $tablet) {
-    margin-right: calc(4px + 3vw);
   }
 }
 

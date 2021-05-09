@@ -89,14 +89,14 @@
       border-bottom: 2px solid $main;
     }
   }
+}
 
-  @media (min-width: $desktop) {
+@media (min-width: $desktop) {
+  .menu__list--index .menu__link {
+    color: $text-promo;
+
     &--current {
       border-bottom-color: inherit;
-    }
-
-    &--index {
-      color: $text-promo;
     }
   }
 }
