@@ -1,4 +1,6 @@
 .add-goods {
+  position: relative;
+
   padding-top: 25px;
   padding-bottom: 35px;
 
@@ -22,17 +24,38 @@
   font-family: $oswald;
 
   @media (min-width: $tablet) {
+    width: fit-content;
+    margin-left: -39px;
     margin-bottom: 80px;
+    padding-right: 42px;
+    padding-left: 39px;
 
     font-size: 36px;
     line-height: 36px;
+
+    background-color: white;
+
+    &::before {
+      position: absolute;
+      top: 97px;
+      right: 0;
+
+      display: block;
+      width: 100%;
+      height: 2px;
+      z-index: -1;
+
+      content: "";
+      background-color: $main;
+    }
   }
 }
 
 .add-goods__wrapper {
   @media (min-width: $desktop) {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 79px;
   }
 }
 
@@ -40,8 +63,8 @@
   @include list-reset;
 
   @media (min-width: $desktop) {
+    grid-column: 1/4;
     min-width: 896px;
-    margin-right: 79px;
   }
 }
 
@@ -68,6 +91,7 @@
 }
 
 .add-goods__gift {
+  grid-column: 4/5;
   display: block;
   margin-top: 39px;
   margin-bottom: 0;
@@ -101,6 +125,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-back@2x.jpg");
+    background-size: 280px auto;
+  }
+
   &::before {
     position: absolute;
     top: 55px;
@@ -122,6 +151,11 @@
     text-align: left;
     background-image: url("../img/gift-back-tab.jpg");
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-back-tab@2x.jpg");
+      background-size: 708px auto;
+    }
+
     &::before {
       top: 55px;
       left: 90px;
@@ -132,7 +166,12 @@
     padding: 185px 43px 42px 41px;
 
     text-align: center;
-    background-image: url("../img/gift-back.jpg");
+    background-image: url("../img/gift-back-desk.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-back-desk@2x.jpg");
+      background-size: 245px auto;
+    }
 
     &::before {
       top: 55px;

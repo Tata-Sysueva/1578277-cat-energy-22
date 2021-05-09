@@ -11,9 +11,11 @@
       <div class="page-header__wrapper">
         <div class="page-header__inner container container--reset">
           <a href="index.html" class="page-header__logo page-header__logo--form logo">
-            <img class="logo__image logo__image--mobile" src="img/logo-img-mobile.svg" width="34" height="38" alt="Логотип магазина Cat Energy">
-            <img class="logo__image logo__image--tablet" src="img/logo-img-tablet.svg" width="60" height="50" alt="Логотип магазина Cat Energy">
-            <img class="logo__image logo__image--desktop" src="img/logo-img-desktop.svg" width="71" height="59" alt="Логотип магазина Cat Energy">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/logo-img-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-img-tablet.svg">
+              <img class="logo__image" src="img/logo-img-mobile.svg" width="34" height="38" alt="Логотип магазина Cat Energy">
+            </picture>
             <img class="logo__title" src="img/logo-text-mobile.svg" width="101" height="18" alt="">
           </a>
           <button class="page-header__button" type="button" aria-controls="menu__list">

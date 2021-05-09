@@ -12,21 +12,46 @@
   @media (min-width: $tablet) {
     padding-left: 59px;
   }
-}
 
-.checkbox__input + .checkbox__label::before {
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: -5px;
-  width: 30px;
-  height: 30px;
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 30px;
+    height: 30px;
 
-  border: 1px solid $border;
+    border: 1px solid $border;
 
-  @media (min-width: $tablet) {
-    width: 40px;
-    height: 40px;
+    @media (min-width: $tablet) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+
+  &::after {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+
+    width: 26px;
+    height: 26px;
+
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    content: " ";
+
+    opacity: 0;
+    transform: translateY(-12px);
+
+    transition: opacity 300ms, transform 300ms;
+
+    @media (min-width: $tablet) {
+      left: 7px;
+    }
   }
 }
 
@@ -35,37 +60,10 @@
 }
 
 .checkbox__input:checked + .checkbox__label::after {
-  position: absolute;
-  left: 3px;
-
-  width: 26px;
-  height: 26px;
-
-  background-image: url("../img/tick.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  content: " ";
-
-  transform-origin: 0% 100%;
-  animation-name: tick;
-  animation-duration: 0.3s;
-  animation-fill-mode: both;
-
-  @media (min-width: $tablet) {
-    left: 7px;
-  }
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .checkbox__input:disabled + .checkbox__label {
   opacity: 0.3;
-}
-
-@keyframes tick {
-  0% {
-    transform: translateY(-15px);
-  }
-  100% {
-    transform: translateY(2px);
-  }
 }

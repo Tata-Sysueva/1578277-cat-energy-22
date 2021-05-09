@@ -1,6 +1,7 @@
 .promo {
   position: relative;
   padding-bottom: 22px;
+
   background: linear-gradient(to bottom, $back-green, $back-green 303px, transparent, transparent 302px);
 
   @media (min-width: $tablet) {
@@ -22,10 +23,15 @@
       bottom: 75px;
       left: calc(50vw + 2px);
 
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-green-desktop.jpg");
+      background-image: linear-gradient($back-green085, $back-green085), url("../img/background-green-desktop.jpg");
       background-repeat: no-repeat;
       background-position: left;
       background-color: $back-green;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient($back-green085, $back-green085), url("../img/background-green-desktop@2x.jpg");
+        background-size: 1044px auto;
+      }
     }
   }
 }
@@ -33,9 +39,16 @@
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-  background-image: url("../img/background-green.jpg");
+
+  background-image: linear-gradient($back-green085, $back-green085), url("../img/background-green.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: auto 302px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient($back-green085, $back-green085), url("../img/background-green@2x.jpg");
+    background-size: 563px 302px;
+  }
 
   @media (min-width: $tablet) {
     background: none;
@@ -93,26 +106,20 @@
   display: block;
   margin: 0 auto;
 
-  &--tablet {
-    display: none;
-  }
-
   @media (min-width: $tablet) {
-    display: none;
+    position: absolute;
+    top: 220px;
+    z-index: -1;
 
-    &--tablet {
-      position: absolute;
-      top: 220px;
-      display: block;
-      z-index: -1;
-    }
+    width: 709px;
+    height: auto;
   }
 
   @media (min-width: $desktop) {
-    &--tablet {
-      top: -10%;
-      left: calc(50vw - 160px);
-    }
+    top: -10%;
+    left: calc(50vw - 160px);
+
+    width: 552px;
   }
 }
 

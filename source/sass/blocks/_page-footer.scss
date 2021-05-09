@@ -21,7 +21,7 @@
   @media (min-width: $desktop) {
     position: absolute;
     top: 80px;
-    left: calc(10vw - 98px);
+    left: calc(50vw - 620px);
 
     padding: 66px 89px 51px 76px;
     background-color: $white;
@@ -90,7 +90,7 @@
   }
 
   @media (min-width: $desktop) {
-    max-width: 1440px;
+    max-width: 1280px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -156,12 +156,8 @@
 
 .page-footer__element {
   @media (min-width: $tablet) {
-    min-width: 129px;
+    width: 129px;
     margin-right: auto;
     border: none;
-  }
-
-  @media (min-width: $desktop) {
-    margin-right: 387px;
   }
 }
