@@ -24,7 +24,7 @@
   border: 1px solid $special-grey;
   outline: none;
 
-  -moz-appearance: textfield;
+  appearance: textfield;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
