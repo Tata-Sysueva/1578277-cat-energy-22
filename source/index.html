@@ -12,8 +12,8 @@
 
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page__body">
-    <header class="page-header page-header--container">
+  <body class="page__body page__body--index">
+    <header class="page-header page-header--container page-header--index">
       <div class="page-header__wrapper">
         <div class="page-header__inner container container--reset">
           <a href="#" class="page-header__logo logo">
@@ -98,49 +98,49 @@
         </ul>
       </section>
       <section class="example">
-        <div class="container">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__text">
-            Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.
-          </p>
-          <dl class="example__table">
-            <div class="example__inner example__inner--slim">
-              <dt class="example__property example__property--slim">Снижение веса</dt>
-              <dd class="example__value example__value--slim">5 кг</dd>
-            </div>
-            <div class="example__inner example__inner--days">
-              <dt class="example__property example__property--time">Затрачено времени</dt>
-              <dd class="example__value example__value--time">60 дней</dd>
-            </div>
-            <div class="example__inner example__inner--cost">
-              <dt class="example__property example__property--cost">Затраты на питание:</dt>
-              <dd class="example__value example__value--cost">15 000 руб.</dd>
-            </div>
-          </dl>
-        </div>
-        <div class="example__slider slider">
-            <div class="slider__container">
-              <div class="slider-box slider-box--before">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/before-tablet.png, img/before-tablet@2x.png 2x">
-                <img class="slider__img slider__img--before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Фото кота Бориса до начала употребления корма Cat Energy Slim">
-              </picture>
+        <div class="example__container container">
+          <div class="example__box">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__text">
+              Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.
+            </p>
+            <dl class="example__table">
+              <div class="example__inner example__inner--slim">
+                <dt class="example__property example__property--slim">Снижение веса</dt>
+                <dd class="example__value example__value--slim">5 кг</dd>
               </div>
-              <div class="slider-box slider-box--after">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/after-tablet.png, img/after-tablet@2x.png 2x">
-                <img class="slider__img slider__img--after" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" width="251" height="240" alt="Фото кота Бориса спустя 2 месяца употребления корма Cat Energy Slim">
-              </picture>
+              <div class="example__inner example__inner--days">
+                <dt class="example__property example__property--time">Затрачено времени</dt>
+                <dd class="example__value example__value--time">60 дней</dd>
               </div>
-            </div>
-            <div class="slider__toggle">
-              <button class="slider__button slider__button--before">Было</button>
-              <div class="slider__scale">
-                <div class="slider__thumb"></div>
+              <div class="example__inner example__inner--cost">
+                <dt class="example__property example__property--cost">Затраты на питание:</dt>
+                <dd class="example__value example__value--cost">15 000 руб.</dd>
               </div>
-              <button class="slider__button slider__button--after">Стало</button>
-            </div>
+            </dl>
           </div>
+          <div class="example__slider slider">
+              <div class="slider__container">
+                <div class="slider__box slider__box--before">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/before-tablet.png, img/before-tablet@2x.png 2x">
+                    <img class="slider__img slider__img--before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Фото кота Бориса до начала употребления корма Cat Energy Slim">
+                  </picture>
+                </div>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/after-tablet.png, img/after-tablet@2x.png 2x">
+                  <img class="slider__img slider__img--after" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" width="251" height="240" alt="Фото кота Бориса спустя 2 месяца употребления корма Cat Energy Slim">
+                </picture>
+              </div>
+              <div class="slider__toggle">
+                <button class="slider__button slider__button--before">Было</button>
+                <div class="slider__scale">
+                  <div class="slider__thumb"></div>
+                </div>
+                <button class="slider__button slider__button--after">Стало</button>
+              </div>
+            </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer page-footer--index">
@@ -152,7 +152,7 @@
         </address>
       </div>
       <div class="page-footer__map">
-        <iframe class="page-footer__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.9919987303897!2d30.320439600490996!3d59.93850547005891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618024616357!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="page-footer__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.9919987303897!2d30.320439600490996!3d59.93850547005891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618024616357!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="page-footer__contacts">
         <div class="page-footer__container container">
