@@ -38,4 +38,10 @@
       line-height: 0;
     }
   }
+
+  @media (min-width: $desktop) {
+    &--promo-tablet {
+      padding: 17px 26px;
+    }
+  }
 }

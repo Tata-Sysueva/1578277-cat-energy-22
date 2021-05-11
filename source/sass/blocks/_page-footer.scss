@@ -20,10 +20,10 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    top: 80px;
-    left: calc(50vw - 620px);
+    top: 95px;
+    left: calc(50vw - 610px);
 
-    padding: 66px 89px 51px 76px;
+    padding: 60px 89px 59px 76px;
     background-color: $white;
   }
 }
@@ -41,6 +41,12 @@
     font-size: 20px;
     line-height: 21px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 163px;
+    margin-right: 85px;
+    line-height: 25px;
+  }
 }
 
 .page-footer__address {
@@ -50,17 +56,21 @@
   line-height: 20px;
   color: $text-main;
 
+  &--space {
+    @media (min-width: $tablet) {
+      display: block;
+      margin-top: 23px;
+    }
+  }
+
   @media (min-width: $tablet) {
     max-width: 159px;
     font-size: 16px;
     text-align: end;
   }
 
-  &--space {
-    @media (min-width: $tablet) {
-      display: block;
-      margin-top: 23px;
-    }
+  @media (min-width: $desktop) {
+    text-align: left;
   }
 }
 
@@ -116,10 +126,15 @@
   }
 
   @media (min-width: $tablet) {
+    padding-top: 55px;
+
     margin-right: auto;
   }
 
   @media (min-width: $desktop) {
+    padding-top: 63px;
+    padding-bottom: 62px;
+
     margin-right: 413px;
   }
 }

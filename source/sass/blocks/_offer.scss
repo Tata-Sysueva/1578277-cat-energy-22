@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 77px 51px 55px;
+    padding: 45px 51px 55px;
     margin-bottom: 0;
 
     &--pro {
@@ -49,11 +49,14 @@
   }
 
   &--pro {
+    margin-bottom: 41px;
+
     &::before {
 
       width: 67px;
       height: 50px;
       margin-right: 11px;
+      margin-left: -17px;
 
       background-image: url("../img/offer-cat-pro.svg");
     }
@@ -72,8 +75,11 @@
   }
 
   @media (min-width: $desktop) {
-    //align-self: center;
     margin-bottom: 73px;
+
+    &--slim {
+      margin-bottom: 37px;
+    }
 
     &::before {
       display: block;
@@ -87,8 +93,9 @@
     }
 
     &--pro {
-      &::before {
+      margin-bottom: 41px;
 
+      &::before {
         width: 134px;
         height: 100px;
         margin-right: 47px;
@@ -145,6 +152,11 @@
 
   @media (min-width: $desktop) {
     max-width: none;
+    margin-bottom: 27px;
+
+    &--slim {
+      margin-bottom: 27px;
+    }
 
     &::after {
       display: none;
@@ -170,7 +182,7 @@
     content: "";
     width: 32px;
     height: 10px;
-    margin-left: 17px;
+    margin-left: 29px;
 
     background-image: url("../img/arrow.svg");
   }
