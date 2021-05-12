@@ -10,22 +10,15 @@
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 75px;
+    padding-bottom: 70px;
 
-    background: linear-gradient(to top, $back, $back 455px, transparent, transparent 455px);
+    background: linear-gradient(to top, $back, $back 460px, $transparent, $transparent 460px);
   }
 }
 
 .example__container {
   @media (min-width: $desktop) {
     display: flex;
-  }
-}
-
-.example__box {
-  @media (min-width: $desktop) {
-    width: 440px;
-    margin-right: 50px;
   }
 }
 
@@ -58,7 +51,7 @@
     grid-row: 1/2;
     grid-column: 1/2;
 
-    margin-top: 58px;
+    margin-top: 61px;
     margin-bottom: 146px;
   }
 }
@@ -89,10 +82,10 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin: 0 0 297px 0;
+  margin: 0 0 42px 0;
 
   @media (min-width: $tablet) {
-    margin-bottom: 608px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop) {
@@ -130,7 +123,7 @@
     align-self: center;
 
     width: auto;
-    margin: 0 auto 42px;
+    margin: 0 auto;
     padding: 0;
 
     border: none;
@@ -154,10 +147,16 @@
   }
 
   @media (min-width: $desktop) {
+    &--slim {
+      margin-left: 0;
+      padding-bottom: 19px;
+    }
+
     &--cost {
       display: flex;
       flex-wrap: wrap;
-      margin-top: 55px;
+      margin-top: 61px;
+      margin-bottom: 5px;
       margin-left: 0;
     }
   }
@@ -222,7 +221,7 @@
   }
 
   @media (min-width: $desktop) {
-    top: 60px;
+    top: 63px;
 
     background-color: $back;
   }

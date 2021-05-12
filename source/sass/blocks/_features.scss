@@ -53,7 +53,9 @@
   @media (min-width: $desktop) {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 11px;
-    column-gap: 74px;
+    column-gap: 78px;
+
+    margin-right: 0;
   }
 }
 
@@ -136,6 +138,16 @@
 
     &:first-child::after {
       right: 35px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      right: 0;
+    }
+
+    &:first-child::after {
+      right: 15px;
     }
   }
 }
