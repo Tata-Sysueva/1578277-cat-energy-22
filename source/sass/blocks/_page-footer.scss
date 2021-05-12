@@ -76,7 +76,34 @@
 
 .page-footer__map {
   min-height: 362px;
+
+  background-image: url("../img/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: $back;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/map@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 400px;
+
+    background-image: url("../img/map-tab.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tab@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/map-desk.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desk@2x.jpg");
+    }
+  }
 }
 
 .page-footer__map-image {
@@ -163,7 +190,7 @@
     color: $main;
   }
 
-  &active,
+  &:active,
   &:focus {
     opacity: 0.3;
   }

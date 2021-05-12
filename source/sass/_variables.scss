@@ -24,6 +24,7 @@ $green085: rgba(104, 183, 56, 0.85);
 $special-green: #5eaa2f;
 $basic-green: #68b738;
 
+$transparent: rgba($black, 0);
 $text-main: $browngrey;
 $text-promo: $white;
 $text-promo03: $white03;
@@ -59,3 +60,8 @@ $oswald: "Oswald", "Arial", sans-serif;
 
 $tablet: 768px;
 $desktop: 1280px;
+
+//offsets
+
+$gradient-offset: 360px;
+$gradient-offset-desk: 340px;

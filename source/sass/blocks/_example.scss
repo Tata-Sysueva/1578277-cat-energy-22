@@ -12,7 +12,7 @@
   @media (min-width: $desktop) {
     padding-bottom: 70px;
 
-    background: linear-gradient(to top, $back, $back 460px, transparent, transparent 460px);
+    background: linear-gradient(to top, $back, $back 460px, $transparent, $transparent 460px);
   }
 }
 
@@ -83,7 +83,6 @@
   flex-wrap: wrap;
 
   margin: 0 0 42px 0;
-  //297
 
   @media (min-width: $tablet) {
     margin-bottom: 59px;
@@ -125,7 +124,6 @@
 
     width: auto;
     margin: 0 auto;
-    //42px
     padding: 0;
 
     border: none;

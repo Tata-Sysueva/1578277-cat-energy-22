@@ -44,7 +44,7 @@
 
       width: 45%;
       height: 520px;
-      background-image: linear-gradient(to top, $dark-back, $dark-back 360px, $text-promo, $text-promo 360px);
+      background-image: linear-gradient(to top, $dark-back, $dark-back $gradient-offset, $text-promo, $text-promo $gradient-offset);
     }
 
     @media (min-width: $desktop) {
@@ -53,7 +53,7 @@
 
       width: 50%;
 
-      background-image: linear-gradient(to top, $back, $back 340px, $text-promo, $text-promo 340px);
+      background-image: linear-gradient(to top, $back, $back $gradient-offset-desk, $text-promo, $text-promo $gradient-offset-desk);
     }
   }
 }

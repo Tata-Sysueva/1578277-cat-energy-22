@@ -112,12 +112,18 @@
   order: 3;
 
   @media (min-width: $tablet) {
-    order: 0;
     max-width: 244px;
     margin-left: 87px;
+    padding: 14px 26px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    order: 0;
   }
 
   @media (min-width: $desktop) {
     margin-left: 81px;
+    padding: 17px 26px;
   }
 }
