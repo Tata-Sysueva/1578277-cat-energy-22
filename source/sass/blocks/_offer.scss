@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 30px 31px 18px 20px;
+  padding: 30px 31px 22px 20px;
   margin-bottom: 20px;
   background-color: $back;
 
@@ -11,8 +11,12 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 77px 53px 53px;
+    padding: 77px 53px 55px;
     margin-bottom: 30px;
+
+    &--pro {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -29,7 +33,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 0 22px 71px;
+  margin: 0 0 29px 71px;
 
   font-weight: 400;
   font-size: 24px;
@@ -40,7 +44,7 @@
 
   &::before {
     position: absolute;
-    left: 20px;
+    left: 22px;
 
     content: "";
     width: 50px;
@@ -52,10 +56,10 @@
   }
 
   &--pro {
-    margin-bottom: 29px;
+    margin-bottom: 31px;
 
     &::before {
-      left: 12px;
+      left: 14px;
 
       width: 67px;
       height: 50px;
@@ -73,8 +77,8 @@
     line-height: 36px;
 
     &::before {
-      top: 65px;
-      right: 50px;
+      top: 80px;
+      right: 62px;
       left: auto;
 
       width: 200px;
@@ -82,8 +86,11 @@
     }
 
     &--pro {
+      margin-bottom: 26px;
+
       &::before {
-        right: 25px;
+        top: 92px;
+        right: 27px;
 
         width: 268px;
         height: 200px;
@@ -117,7 +124,7 @@
 .offer__description {
   display: block;
   padding: 0 0 23px 0;
-  margin: 0 0 15px 0;
+  margin: 0 0 19px 0;
 
   font-size: 14px;
   line-height: 18px;
@@ -127,7 +134,7 @@
   @media (min-width: $tablet) {
     max-width: calc(100% - 220px);
     padding: 0;
-    margin-bottom: 48px;
+    margin-bottom: 53px;
 
     font-size: 16px;
     line-height: 24px;
@@ -135,7 +142,7 @@
     border-bottom: none;
 
     &--pro {
-      max-width: calc(100% - 240px);
+      max-width: calc(100% - 258px);
     }
   }
 
@@ -167,7 +174,7 @@
     content: "";
     width: 32px;
     height: 10px;
-    margin-left: 29px;
+    margin-left: 15px;
 
     background-image: url("../img/arrow.svg");
   }
@@ -175,5 +182,9 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      margin-left: 24px;
+    }
   }
 }
