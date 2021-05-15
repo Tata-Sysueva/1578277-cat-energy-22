@@ -10,6 +10,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    margin-top: 5px;
+
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
@@ -32,8 +34,8 @@
 }
 
 .menu__item {
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding-top: 21px;
+  padding-bottom: 23px;
 
   border-top: 1px solid $special-pink;
 
@@ -42,6 +44,9 @@
   }
 
   &:last-child {
+    padding-top: 23px;
+    padding-bottom: 24px;
+
     border-bottom: 1px solid $special-pink;
   }
 
@@ -51,12 +56,16 @@
     padding-right: 32px;
     border: none;
 
+    &:first-child {
+      padding-right: 35px;
+    }
+
     &:nth-child(2) {
       padding-right: 36px;
     }
 
     &:last-child {
-      padding-right: 0;
+      padding: 0;
       border: none;
     }
   }

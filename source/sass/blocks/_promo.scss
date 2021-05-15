@@ -1,8 +1,8 @@
 .promo {
   position: relative;
-  padding-bottom: 22px;
+  padding-bottom: 23px;
 
-  background: linear-gradient(to bottom, $back-green, $back-green 303px, transparent, transparent 302px);
+  background: linear-gradient(to bottom, $back-green, $back-green 300px, $transparent, $transparent 300px);
 
   @media (min-width: $tablet) {
     padding-bottom: 526px;
@@ -21,7 +21,8 @@
   background-image: linear-gradient($back-green085, $back-green085), url("../img/background-green.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: auto 302px;
+  background-size: auto 300px;
+  background-position-x: -155px;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient($back-green085, $back-green085), url("../img/background-green@2x.jpg");
@@ -43,7 +44,7 @@
   @media (min-width: $tablet) {
     padding-top: 0;
     padding-left: 87px;
-    padding-bottom: 20px;
+    padding-bottom: 27px;
 
     text-align: left;
     color: $text-dark;
@@ -88,11 +89,11 @@
 
 .promo__image {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 3px;
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: 220px;
+    top: 200px;
     z-index: -1;
 
     width: 709px;
@@ -113,11 +114,7 @@
 
   @media (min-width: $tablet) {
     max-width: 244px;
-    margin-left: 87px;
-    padding: 14px 26px;
-
-    font-size: 20px;
-    line-height: 20px;
+    margin-left: 83px;
 
     order: 0;
   }

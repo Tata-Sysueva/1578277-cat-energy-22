@@ -9,6 +9,9 @@
 }
 
 .logo__image {
+  width: 34px;
+  height: 38px;
+
   margin-right: 55px;
 
   @media (min-width: $tablet) {
@@ -25,6 +28,8 @@
 }
 
 .logo__title {
+  width: 101px;
+
   @media (min-width: $desktop) {
     width: 118px;
   }
