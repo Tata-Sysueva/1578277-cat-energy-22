@@ -13,10 +13,10 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="page-header page-header-catalog page-header--container">
+    <header class="page-header page-header--container page-header--index">
       <div class="page-header__wrapper">
         <div class="page-header__inner container container--reset">
-          <a href="index.html" class="page-header__logo logo">
+          <a href="#" class="page-header__logo logo">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/logo-img-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-img-tablet.svg">
@@ -26,7 +26,7 @@
           </a>
           <button class="page-header__button" type="button" aria-controls="menu__list">
             <span class="visually-hidden">Открыть, закрыть</span>
-            <svg class="page-header__icon" aria-hidden="true" width="24" height="16">
+            <svg class="page-header__icon" aria-hidden="true" width="18" height="18">
               <use class="page-header__icon-menu" href="img/sprite.svg#menu"></use>
               <use class="page-header__icon-cross" href="img/sprite.svg#cross"></use>
             </svg>
@@ -39,7 +39,7 @@
             <a class="menu__link" href="index.html">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link--current" href="catalog.html">Каталог продукции</a>
+            <a class="menu__link menu__link--current" href="#">Каталог продукции</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="form.html">Подбор программы</a>
@@ -49,7 +49,9 @@
     </header>
     <main class="page-content">
       <div class="container">
-        <h1 class="page-content__title page-content__title--catalog">Каталог продукции</h1>
+        <h1 class="page-content__title page-content__title--catalog">
+          Каталог продукции
+        </h1>
       </div>
       <section class="page-content__cards cards">
         <ul class="cards__list">
@@ -87,7 +89,7 @@
           <li class="cards__item">
             <article class="cards__element card container container--reset">
               <div class="card__wrapper card__wrapper--large">
-                <h3 class="card__title">
+                <h3 class="card__title card__title--chicken-large">
                   <a href="#" class="card__link">Cat energy pro 1000 г</a>
                 </h3>
                 <dl class="card__info">
@@ -105,11 +107,11 @@
                   </div>
                 </dl>
               </div>
-              <a href="#" class="card__link card__link-image card__link-image--large">
+              <a href="#" class="card__link card__link-image card__link-image--chicken-large">
                 <picture>
                   <source media="(min-width: 1280px)" srcset="img/catalog/desktop/chicken-large.png, img/catalog/desktop/chicken-large@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/tablet/chicken-large.png, img/catalog/tablet/chicken-large@2x.png 2x">
-                  <img class="card__image" src="img/catalog/mobile/chicken-large.jpg" srcset="img/catalog/mobile/chicken-large@2x.jpg 2x" width="140" height="112" alt="Банка с кормом Cat Energy Pro">
+                  <img class="card__image card__image--chicken-large" src="img/catalog/mobile/chicken-large.jpg" srcset="img/catalog/mobile/chicken-large@2x.jpg 2x" width="140" height="112" alt="Банка с кормом Cat Energy Pro">
                 </picture>
               </a>
               <a href="blank.html" class="card__button primary-button">Заказать</a>
@@ -181,7 +183,7 @@
             <article class="cards__element card container container--reset">
               <div class="card__wrapper">
                 <h3 class="card__title">
-                  <a href="#" class="card__link">Cat energy pro 500 г</a>
+                  <a href="#" class="card__link">Cat energy slim 500 г</a>
                 </h3>
                 <dl class="card__info">
                   <div class="card__inner">
@@ -194,7 +196,7 @@
                   </div>
                   <div class="card__inner">
                     <dt class="card__property">Цена</dt>
-                    <dd class="card__value">700 Р.</dd>
+                    <dd class="card__value">400 Р.</dd>
                   </div>
                 </dl>
               </div>
@@ -212,7 +214,7 @@
             <article class="cards__element card container container--reset">
               <div class="card__wrapper">
                 <h3 class="card__title">
-                  <a href="#" class="card__link">Cat energy pro 1000 г</a>
+                  <a href="#" class="card__link">Cat energy slim 1000 г</a>
                 </h3>
                 <dl class="card__info">
                   <div class="card__inner">
@@ -225,7 +227,7 @@
                   </div>
                   <div class="card__inner">
                     <dt class="card__property">Цена</dt>
-                    <dd class="card__value">1000 Р.</dd>
+                    <dd class="card__value">700 Р.</dd>
                   </div>
                 </dl>
               </div>
@@ -243,7 +245,7 @@
             <article class="cards__element card container container--reset">
               <div class="card__wrapper">
                 <h3 class="card__title">
-                  <a href="#" class="card__link">Cat energy pro 500 г</a>
+                  <a href="#" class="card__link">Cat energy slim 500 г</a>
                 </h3>
                 <dl class="card__info">
                   <div class="card__inner">
@@ -256,7 +258,7 @@
                   </div>
                   <div class="card__inner">
                     <dt class="card__property">Цена</dt>
-                    <dd class="card__value">700 Р.</dd>
+                    <dd class="card__value">500 Р.</dd>
                   </div>
                 </dl>
               </div>
@@ -275,7 +277,7 @@
               <h3 class="card__title card__title">
                 <a href="#" class="card__link">Показать ещё 100500 товаров</a>
               </h3>
-              <p class="card__info card__info--desc">На самом деле вкусов гораздо больше!</p>
+              <p class="card__info card__info--desc">На самом деле вкусов гораздо&nbsp;больше!</p>
               <a href="blank.html" class="card__button primary-button">Показать все</a>
             </article>
           </li>
@@ -288,41 +290,49 @@
             <ul class="add-goods__list">
               <li class="add-goods__item">
                 <article class="add-goods__element add-good">
-                  <h3 class="add-good__title">Сахарозаменитель</h3>
-                  <dl class="add-good__list">
-                    <dt class="add-good__property">1 упаковка (100 г)</dt>
-                    <dd class="add-good__value">200 Р.</dd>
-                  </dl>
+                  <div class="add-good__wrapper">
+                    <h3 class="add-good__title">Сахарозаменитель</h3>
+                    <dl class="add-good__list">
+                      <dt class="add-good__property">1 упаковка (100 г)</dt>
+                      <dd class="add-good__value">200 Р.</dd>
+                    </dl>
+                  </div>
                   <a href="blank.html" class="add-good__button primary-button">Заказать</a>
                 </article>
               </li>
               <li class="add-goods__item">
                 <article class="add-goods__element add-good">
-                  <h3 class="add-good__title">Питьевая вода</h3>
-                  <dl class="add-good__list">
-                    <dt class="add-good__property">5 литров</dt>
-                    <dd class="add-good__value">50 Р.</dd>
-                  </dl>
+                  <div class="add-good__wrapper">
+                    <h3 class="add-good__title">Питьевая вода</h3>
+                    <dl class="add-good__list">
+                      <dt class="add-good__property add-good__property--water">5 литров</dt>
+                      <dd class="add-good__value">50 Р.&nbsp;&nbsp;</dd>
+                    </dl>
+                  </div>
                   <a href="blank.html" class="add-good__button primary-button">Заказать</a>
                 </article>
               </li>
               <li class="add-goods__item">
                 <article class="add-goods__element add-good">
-                  <h3 class="add-good__title">Молоко</h3>
-                  <dl class="add-good__list">
-                    <dt class="add-good__property">1 литр</dt>
-                    <dd class="add-good__value">100 Р.</dd>
-                  </dl>
+                  <div class="add-good__wrapper">
+                    <h3 class="add-good__title">Молоко</h3>
+                    <dl class="add-good__list">
+                      <dt class="add-good__property">1 литр</dt>
+                      <dd class="add-good__value">100 Р.</dd>
+                    </dl>
+                  </div>
                   <a href="blank.html" class="add-good__button primary-button">Заказать</a>
                 </article>
               </li>
               <li class="add-goods__item">
                 <article class="add-goods__element add-good">
-                  <h3 class="add-good__title">Витамины</h3>
-                  <dl class="add-good__list">
-                    <dt class="add-good__property">1 упаковка (30г)</dt>
-                    <dd class="add-good__value">300 Р.</dd>
-                  </dl>
+                  <div class="add-good__wrapper">
+                    <h3 class="add-good__title">Витамины</h3>
+                    <dl class="add-good__list">
+                      <dt class="add-good__property">1 упаковка (30 г)</dt>
+                      <dd class="add-good__value">300 Р.</dd>
+                    </dl>
+                  </div>
                   <a href="blank.html" class="add-good__button primary-button">Заказать</a>
                 </article>
               </li>
@@ -336,7 +346,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper page-footer__wrapper--form container container--form">
-        <p class="page-footer__cooperation">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="page-footer__cooperation">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <address class="page-footer__address">
           ул. Большая Конюшенная, д. 19/8
           <span class="page-footer__address page-footer__address--space">Санкт-Петербург</span>

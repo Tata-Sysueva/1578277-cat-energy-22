@@ -15,7 +15,7 @@
   padding: 28px 19px;
 
   @media (min-width: $tablet) {
-    padding: 62px 72px 59px 71px;
+    padding: 62px 72px 57px 71px;
   }
 
   @media (min-width: $desktop) {
@@ -39,7 +39,7 @@
   @media (min-width: $tablet) {
     max-width: 171px;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 27px;
   }
 
   @media (min-width: $desktop) {
@@ -123,16 +123,15 @@
 .page-footer__container {
   max-width: 540px;
   margin: 0 auto;
-  padding-left: 19px;
-  padding-right: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet) {
     display: flex;
     align-items: center;
 
     max-width: none;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding: 55px 30px;
   }
 
   @media (min-width: $desktop) {

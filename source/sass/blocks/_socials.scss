@@ -3,9 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
 
-  padding: 18px 0 14px;
+  padding: 18px 77px 14px 73px;
 
   border-top: 1px solid $special-pink;
   border-bottom: 1px solid $special-pink;
@@ -24,7 +23,7 @@
     margin-right: 0;
   }
 
-  @media (max-width: $tablet) {
+  @media (min-width: $tablet) {
     margin-right: 23px;
 
     &:nth-child(2) {
