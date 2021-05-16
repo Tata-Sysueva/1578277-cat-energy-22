@@ -1,16 +1,16 @@
 .add-goods {
   position: relative;
 
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 35px;
 
   @media (min-width: $tablet) {
-    padding-top: 68px;
+    padding-top: 66px;
     padding-bottom: 76px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 76px;
+    padding-top: 74px;
     padding-bottom: 86px;
   }
 }
@@ -25,10 +25,9 @@
 
   @media (min-width: $tablet) {
     width: fit-content;
-    margin-left: -39px;
     margin-bottom: 80px;
-    padding-right: 42px;
-    padding-left: 39px;
+    padding-right: 36px;
+    padding-left: 37px;
 
     font-size: 36px;
     line-height: 36px;
@@ -37,7 +36,7 @@
 
     &::before {
       position: absolute;
-      top: 97px;
+      top: 88px;
       right: 0;
 
       display: block;
@@ -47,6 +46,14 @@
 
       content: "";
       background-color: $main;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: -37px;
+
+    &:before {
+      top: 95px;
     }
   }
 }
@@ -93,10 +100,11 @@
 .add-goods__gift {
   grid-column: 4/5;
   display: block;
-  margin-top: 39px;
-  margin-bottom: 0;
+  max-width: 280px;
+  margin: 35px auto 0;
 
   @media (min-width: $tablet) {
+    max-width: none;
     margin-top: 69px;
     margin-bottom: 0;
   }
@@ -111,7 +119,7 @@
   position: relative;
 
   margin: 0;
-  padding: 186px 51px 43px 58px;
+  padding: 186px 53px 43px 54px;
 
   text-align: center;
   font-size: 16px;
@@ -132,7 +140,8 @@
 
   &::before {
     position: absolute;
-    top: 55px;
+    top: 57px;
+    left: 100px;
 
     width: 80px;
     height: 83px;
@@ -171,11 +180,6 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-back-desk@2x.jpg");
       background-size: 245px auto;
-    }
-
-    &::before {
-      top: 55px;
-      left: auto;
     }
   }
 }
