@@ -80,8 +80,10 @@
 }
 
 .add-good__wrapper {
-  display: flex;
-  align-items: baseline;
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
 
   @media (min-width: $desktop) {
     justify-content: space-between;

@@ -57,28 +57,28 @@
       <form class="page-content__form form" method="POST" action="https://echo.htmlacademy.ru/courses">
         <div class="form__container">
           <fieldset class="form__group form__group--pet">
-            <div class="container container--form container--desktop">
+            <div class="container container--form container--reset-desktop">
               <legend class="visually-hidden">Данные о питомце</legend>
               <div class="form__group-item form-control">
-                <label class="form-control__label" for="name">Имя:<sup>*</sup></label>
+                <label class="form-control__label" for="name">Имя:*</label>
                 <input class="form-control__field form-control__field--name" id="name" type="text" name="cat-name" placeholder="Барсик" required>
               </div>
               <div class="form__group-item form-control">
-                <label class="form-control__label" for="weight">Вес (кг):<sup>*</sup></label>
+                <label class="form-control__label form-control__label--weight" for="weight">Вес (кг):*</label>
                 <input class="form-control__field" id="weight" type="number" name="cat-weight" placeholder="7" required>
               </div>
               <div class="form__group-item form-control">
-                <label class="form-control__label" for="age">Возраст (лет):</label>
+                <label class="form-control__label" for="age">Возраст&nbsp;(лет):</label>
                 <input class="form-control__field" id="age" type="number" name="cat-age" placeholder="7">
               </div>
             </div>
           </fieldset>
           <fieldset class="form__group form__group--program">
             <legend class="visually-hidden">Выбор программы питания</legend>
-            <div class="container container--form container--desktop">
+            <div class="container container--form container--reset-desktop">
               <div class="form__wrap">
                 <div class="form__element radio-button">
-                  <input type="radio" id="slim" name="program-group" class="radio-button__input visually-hidden">
+                  <input type="radio" id="slim" name="program-group" class="radio-button__input visually-hidden" checked>
                   <label for="slim" class="radio-button__label">Похудение</label>
                 </div>
                 <div class="form__element radio-button">
@@ -96,14 +96,14 @@
         <fieldset class="form__group form__group--owner">
           <div class="container container--form">
             <legend class="form__text form__text--owner form__text--line">Контактные данные (владельца кота)</legend>
-            <div class="form__grid">
-              <div class="form__column form__column--email form-control">
-                <label class="form-control__label" for="owner-email">E-mail:<sup>*</sup></label>
+            <div class="form__wrapper">
+              <div class="form__column form-control form-control--owner">
+                <label class="form-control__label" for="owner-email">E-mail:*</label>
                 <input class="form-control__field form-control__field--owner" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
                 <div class="form-control__svg"></div>
               </div>
-              <div class="form__column column--tel form-control">
-                <label class="form-control__label" for="owner-tel">Телефон:<sup>*</sup></label>
+              <div class="form__column form-control">
+                <label class="form-control__label" for="owner-tel">Телефон:*</label>
                 <input class="form-control__field form-control__field--tel" id="owner-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
                 <div class="form-control__svg form-control__svg--tel"></div>
               </div>
@@ -124,7 +124,7 @@
             <legend class="form__text form__text--supplements form__text--line">Дополнительно</legend>
             <div class="form__item-box">
               <div class="form__item checkbox">
-                <input type="checkbox" id="sugar" class="checkbox__input visually-hidden">
+                <input type="checkbox" id="sugar" class="checkbox__input visually-hidden" checked>
                 <label for="sugar" class="checkbox__label">
                   Сахарозаменитель
                 </label>
@@ -160,14 +160,14 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper page-footer__wrapper--form container container--form">
-        <p class="page-footer__cooperation">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="page-footer__cooperation">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <address class="page-footer__address">
           ул. Большая Конюшенная, д. 19/8
           <span class="page-footer__address page-footer__address--space">Санкт-Петербург</span>
         </address>
       </div>
       <div class="page-footer__map">
-        <iframe class="page-footer__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.9919987303897!2d30.320439600490996!3d59.93850547005891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618024616357!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="page-footer__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.9919987303897!2d30.320439600490996!3d59.93850547005891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618024616357!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="page-footer__contacts">
         <div class="page-footer__container">
