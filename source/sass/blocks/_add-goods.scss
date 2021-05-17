@@ -52,7 +52,7 @@
   @media (min-width: $desktop) {
     margin-left: -37px;
 
-    &:before {
+    &::before {
       top: 95px;
     }
   }
