@@ -2,6 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+
   padding: 30px 31px 22px 20px;
   margin-bottom: 20px;
   background-color: $back;
@@ -157,7 +159,9 @@
 }
 
 .offer__link {
-  display: flex;
+  position: relative;
+
+  display: inline-flex;
   align-items: center;
 
   font-size: 16px;
@@ -166,17 +170,46 @@
   text-transform: uppercase;
   color: $text-dark;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   &::after {
     content: "";
-    width: 32px;
-    height: 10px;
-    margin-left: 15px;
 
-    background-image: url("../img/arrow.svg");
+    position: absolute;
+    top: 5px;
+    left: 118px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 4px solid transparent;
+    border-left: 7px solid $text-dark;
+    border-bottom: 4px solid transparent;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 101px;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: $text-dark;
+  }
+
+  &:hover {
+    &::after {
+      transform: translateX(6px);
+    }
+
+    &::before {
+      width: 24px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet) {
@@ -184,7 +217,13 @@
     line-height: 30px;
 
     &::after {
-      margin-left: 24px;
+      top: 10px;
+      left: 147px;
+    }
+
+    &::before {
+      top: 13px;
+      left: 132px;
     }
   }
 }

@@ -106,6 +106,14 @@
     &:nth-child(2) {
       margin-bottom: 23px;
     }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 21px;
+
+      &:nth-child(2) {
+        margin-bottom: 21px;
+      }
+    }
   }
 }
 
@@ -160,7 +168,7 @@
     }
 
     @media (min-width: $desktop) {
-      margin-bottom: 76px;
+      margin-bottom: 77px;
     }
   }
 

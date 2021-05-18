@@ -45,6 +45,11 @@
 
   &:active {
     color: $main;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px dotted $main;
   }
 }
 
@@ -54,7 +59,7 @@
     height: 22px;
 
     &--facebook {
-      height: 27px;
+      height: 33px;
     }
   }
 }

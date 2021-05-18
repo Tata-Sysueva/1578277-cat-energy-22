@@ -57,8 +57,8 @@
       <form class="page-content__form form" method="POST" action="https://echo.htmlacademy.ru/courses">
         <div class="form__container">
           <fieldset class="form__group form__group--pet">
+            <legend class="visually-hidden">Данные о питомце</legend>
             <div class="container container--form container--reset-desktop">
-              <legend class="visually-hidden">Данные о питомце</legend>
               <div class="form__group-item form-control">
                 <label class="form-control__label" for="name">Имя:*</label>
                 <input class="form-control__field form-control__field--name" id="name" type="text" name="cat-name" placeholder="Барсик" required>
@@ -94,8 +94,9 @@
           </fieldset>
         </div>
         <fieldset class="form__group form__group--owner">
+          <legend class="visually-hidden">Контактные данные</legend>
           <div class="container container--form">
-            <legend class="form__text form__text--owner form__text--line">Контактные данные (владельца кота)</legend>
+            <p class="form__text form__text--owner form__text--line">Контактные данные (владельца кота)</p>
             <div class="form__wrapper">
               <div class="form__column form-control form-control--owner">
                 <label class="form-control__label" for="owner-email">E-mail:*</label>
@@ -111,8 +112,9 @@
           </div>
         </fieldset>
         <fieldset class="form__group form__group--comment">
+          <legend class="visually-hidden">Дополнительная информация</legend>
           <div class="container container--form">
-            <legend class="form__text form__text--comment form__text--line">Комментарий</legend>
+            <p class="form__text form__text--comment form__text--line">Комментарий</p>
             <div class="form__group-item form-control">
               <label class="visually-hidden" for="text-field">Текст комментария:</label>
               <textarea class="form-control__field form-control__field--text" id="text-field" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -120,8 +122,9 @@
           </div>
         </fieldset>
         <fieldset class="form__group form__group--supplements">
+          <legend class="visually-hidden">Дополнительно</legend>
           <div class="container container--form">
-            <legend class="form__text form__text--supplements form__text--line">Дополнительно</legend>
+            <p class="form__text form__text--supplements form__text--line">Дополнительно</p>
             <div class="form__item-box">
               <div class="form__item checkbox">
                 <input type="checkbox" id="sugar" class="checkbox__input visually-hidden" checked>

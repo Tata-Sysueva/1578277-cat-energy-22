@@ -60,6 +60,10 @@
   border-color: $border-strong;
 }
 
+.checkbox__input:focus + .checkbox__label::before {
+  box-shadow: 0 0 2px $main;
+}
+
 .checkbox__input:checked + .checkbox__label::after {
   opacity: 1;
   transform: translateY(0);
