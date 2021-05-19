@@ -159,7 +159,7 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    margin-right: 156px;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop) {
@@ -212,7 +212,8 @@
 .page-footer__element {
   @media (min-width: $tablet) {
     width: 129px;
-    margin-right: auto;
+    margin: 0 auto 0 25px;
+
     border: none;
   }
 }

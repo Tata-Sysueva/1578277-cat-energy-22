@@ -8,25 +8,16 @@
     padding-top: 0;
     padding-bottom: 67px;
     background: linear-gradient(to top, $dark-back, $dark-back 462px, transparent, transparent 462px);
+    border-top: 1px solid $special-border;
   }
 
   @media (min-width: $desktop) {
     padding-bottom: 70px;
 
-    background: linear-gradient(to top, $back, $back 465px, $transparent, $transparent 465px);
-
-    &::before {
-      position: absolute;
-      right: 0;
-
-      width: calc(50vw - 328px);
-      height: 100%;
-
-      background: linear-gradient(to top, $dark-back, $dark-back 465px, transparent, transparent 465px);
-
-      content: " ";
-      z-index: -1;
-    }
+    background:
+      linear-gradient(to bottom, $white 195px, $transparent 195px),
+      linear-gradient(to right, $back, $back calc(50% + 324px), $dark-back calc(50% + 324px));
+    border-top: none;
   }
 }
 
@@ -195,7 +186,6 @@
 
   &--cost {
     padding-right: 5px;
-    //padding-left: 15px;
 
     color: $text-dark;
   }
@@ -277,11 +267,5 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     text-align: end;
-  }
-}
-
-.example__slider {
-  @media (min-width: $desktop) {
-    align-self: flex-end;
   }
 }
