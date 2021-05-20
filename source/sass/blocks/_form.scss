@@ -32,7 +32,6 @@
   }
 
   &--comment {
-    //margin-top: 23px;
     padding-bottom: 23px;
     border: none;
   }
@@ -82,7 +81,7 @@
     }
 
     &--owner {
-      margin-bottom: 69px;
+      margin-bottom: 47px;
     }
 
     &--comment {
@@ -209,7 +208,8 @@
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    row-gap: 32px;
+    column-gap: 80px;
     padding: 0;
   }
 }
@@ -290,25 +290,36 @@
 }
 
 .form__column {
-  width: calc(50% - 40px);
   margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet) {
     margin-bottom: 20px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 0;
-  }
+    width: calc(50% - 40px);
 
-  &:last-child {
-    margin-bottom: 0;
+    margin-right: 71px;
+    margin-bottom: 22px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 22px;
+    }
   }
 }
 
 .form__wrapper {
   @media (min-width: $desktop) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .form-control__label {

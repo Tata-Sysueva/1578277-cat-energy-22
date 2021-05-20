@@ -62,6 +62,9 @@
           </div>
           <a href="form.html" class="promo__btn primary-button primary-button--promo">Подобрать программу</a>
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)" srcset="img/product-desktop.webp 1x, img/product-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/product-tablet.webp 1x, img/product-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/product.webp 1x, img/product@2x.webp 2x">
             <source media="(min-width: 1280px)" srcset="img/product-desktop.png, img/product-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/product-tablet.png, img/product-tablet@2x.png 2x">
             <img class="promo__image" src="img/product.png" srcset="img/product@2x.png 2x" width="280" height="270" alt="Банка с кормом Cat Energy Pro">
@@ -128,12 +131,16 @@
             <div class="slider__container">
               <div class="slider__box slider__box--before">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet.png, img/before-tablet@2x.png 2x">
                   <img class="slider__img slider__img--before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Фото кота Бориса до начала употребления корма Cat Energy Slim">
                 </picture>
               </div>
               <div class="slider__box slider__box--after">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet.png, img/after-tablet@2x.png 2x">
                   <img class="slider__img slider__img--after" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" width="251" height="240" alt="Фото кота Бориса спустя 2 месяца употребления корма Cat Energy Slim">
                 </picture>
@@ -143,6 +150,7 @@
               <button class="slider__button slider__button--before">Было</button>
               <div class="slider__scale">
                 <div class="slider__thumb" tabindex="0"></div>
+                <span class="visually-hidden">Плавное переключение между "было" и "стало"</span>
               </div>
               <button class="slider__button">Стало</button>
             </div>
